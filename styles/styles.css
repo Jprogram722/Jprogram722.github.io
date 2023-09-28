@@ -44,19 +44,20 @@ body{
 #m-v{
     color: #334155;
     background-color: #DCF2FF;
-    padding-top: 150px;
-    padding-bottom: 20px;
+    padding-top: 200px;
+    padding-bottom: 150px;
 }
 
 #skills {
     padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 #resume {
     color: #334155;
     background-color: #DCF2FF;
-    padding-top: 150px;
-    padding-bottom: 20px;
+    padding-top: 200px;
+    padding-bottom: 150px;
 }
 
 #contact {
