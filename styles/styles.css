@@ -5,6 +5,7 @@ html {
 }
 
 *{
+    -webkit-tap-highlight-color: transparent;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -143,7 +144,7 @@ a{
 }
 
 .navlinks{
-    padding: 7.5px;
+    padding: 8px;
     color: #DCF2FF;
 }
 
