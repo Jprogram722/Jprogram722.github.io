@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 html {
+    /* Implements smooth scrolling for the entire page */
     scroll-behavior: smooth;
 }
 
@@ -13,13 +14,15 @@ html {
 body{
     padding: 0;
     margin: 0;
+
+    /* Sets the background color and color for the entire html body to be slate and white */
     background-color: #334155;
     color: #DCF2FF;
 }
 
 .website-logo{
     padding-top: 10px;
-    height: 70px;
+    height: 10vh;
     display: block;
     margin: 0 auto;
 }
@@ -39,27 +42,18 @@ body{
     padding-top: 10px;
 }
 
-#m-v{
-    color: #334155;
-    background-color: #bfd2dd;
-}
-
-#resume {
-    color: #334155;
-    background-color: #bfd2dd;
-}
-
-#contact, #resume, #skills, #m-v, #hero{
+.my-section{
     height: 100vh;
     width: 100vw;
     padding-top: 180px;
+    border-bottom: 20px double #bfd2dd;
 }
 
 .personal-pic{
-    height: 300px;
+    height: 30%;
     display: block;
     margin: 0 auto;
-    border-radius: 40px;
+    border-radius: 300px;
 }
 
 .catch-pharse{
@@ -103,13 +97,8 @@ a{
     font-weight: bold;
 }
 
-#hero > .btn-container > .page-link:active, #skills > .btn-container > .page-link:active, #contact > .btn-container > .page-link:active{
+.page-link:active{
     background-color: #bfd2dd;
-    border-radius: 4px;
-}
-
-#m-v > .btn-container > .page-link:active, #resume > .btn-container > .page-link:active{
-    background-color: #334155;
     border-radius: 4px;
 }
 
@@ -129,6 +118,18 @@ a{
 }
 
 .navlinks:active {
+    color: #334155;
+    background-color: #DCF2FF;
+}
+
+.container > a{
+    padding: 8px;
+    color: #DCF2FF;
+    transition: color 70ms linear;
+    transition: background-color 70ms linear;
+}
+
+.container > a:active{
     color: #334155;
     background-color: #DCF2FF;
 }

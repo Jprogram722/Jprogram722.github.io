@@ -1,0 +1,11 @@
+The thinking behind my site has definitly changed between the wireframing stage and the building stage.
+
+When making the wireframe for my website I prioritized condensing all my information into small sections. This is due to the fact that the site was intended for mobile which has a screen size alot smaller than that of windows. after finishing the site I relaized that I had alot more space than I relaized and tried spacing out the content more.
+
+I also planned to have all my links to other websites be buttons and not plain text links. I change this because it was a violation of the w3c guidelines bust also found a work around where the background would change color when pressing on the link.
+
+Finally I changed how the navigation bar looked in the build design. In the wireframe I wanted all the navigaion links right beside my logo. Because of the smaller width and larger height of the mobile screen I decided to put my logo at the center of the nav with links underneith to all for more room to press the links.
+
+From this process I learned that projects will tend to deviate from the intial plan subtly or drastically in order to accomadate new ideas not thought up or circumatances that were not anticipated at the time.
+
+

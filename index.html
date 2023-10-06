@@ -10,7 +10,6 @@
     
     <!--This script tag is linked to the website fontawesome (https://fontawesome.com/) which allows you to use their icons like a linkedin icon and a github icon-->
     <script src="https://kit.fontawesome.com/b17e211a77.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
     <header>
@@ -20,66 +19,77 @@
             <img class="website-logo" src="./pictures/logo-png.jpg" alt="Logo img">
             <!--This is the container for the links in the navbar that take you around the page-->
             <div class="container">
-                <a href="#hero"><p class="navlinks">Home</p></a>
-                <a href="#m-v"><p class="navlinks">M&V</p></a>
-                <a href="#skills"><p class="navlinks">Skills</p></a>
-                <a href="#resume"><p class="navlinks">Resume</p></a>
-                <a href="#contact"><p class="navlinks">Contact</p></a>
+                <a href="#hero">Home</a>
+                <a  href="#m-v">M&V</a>
+                <a  href="#skills">Skills</a>
+                <a  href="#resume">Resume</a>
+                <a  href="#contact">Contact</a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section id="hero">
+        <!--w3c complained that it had no header so I made one and hid it-->
         <h1 class="hide">Hero</h1>
         <!-- This img element inserts a picture of me in the website -->
-        <img class="personal-pic" src="./pictures/selfie_squoosh.jpg" alt="personal picture">
-        <p class="bold-txt center-txt catch-pharse">Finding The Solutions In Data</p>
-        <div class="btn-container">
-            <!--This links the the contact section at the bottom of the page-->
-            <a class="page-link" href="#contact">Contact Me</a>
+        <div class="my-section">
+            <img class="personal-pic" src="./pictures/selfie_squoosh.jpg" alt="personal picture">
+            <p class="bold-txt center-txt catch-pharse">Finding The Solutions In Data</p>
+            <div class="btn-container">
+                <!--This links the the contact section at the bottom of the page-->
+                <a class="page-link" href="#contact">Contact Me</a>
+            </div>
+            <p class="center-txt space-txt">Scroll down for more info</p>
         </div>
-        <p class="center-txt space-txt">Scroll down for more info</p>
     </section>
 
     <!-- Mission and Vision Section -->
     <section id="m-v">
-        <h1 class="center-txt">Mission and Vision</h1>
-        <p class="bold-txt center-txt space-txt">Solving complex problems is my calling</p>
-        <p class="bold-txt center-txt space-txt">My vision is a knowledgable world where uncertainty is no issue</p>
+        <div class="my-section">
+            <h1 class="center-txt">Mission and Vision</h1>
+            <p class="bold-txt center-txt space-txt">Solving complex problems is my calling</p>
+            <p class="bold-txt center-txt space-txt">My vision is a knowledgable world where uncertainty is no issue</p>
+        </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <h1 class="center-txt">Skills</h1>
-        <ul>
-            <li class="skills-list">Data anaylsis using pandas (python data analysis framework)</li>
-            <li class="skills-list">Data manipulation and storage using SQL</li>
-            <li class="skills-list">Analytically Minded</li>
-            <li class="skills-list last-skill">Communication and Presentation of data</li>
-        </ul>
+        <div class="my-section">
+            <h1 class="center-txt">Skills</h1>
+            <ul>
+                <li class="skills-list">Data anaylsis using pandas (python data analysis framework)</li>
+                <li class="skills-list">Data manipulation and storage using SQL</li>
+                <li class="skills-list">Analytically Minded</li>
+                <li class="skills-list last-skill">Data visualization in python and Javascript</li>
+            </ul>
+        </div>
     </section>
 
     <!-- This is the resume and projects section -->
     <section id="resume">
-        <h1 class="center-txt">Resume and Projects</h1>
-        <div class="btn-container">
-            <!--This allows users to downlaod my resume to their computers-->
-            <a download class="page-link" href="./docs/resume_JP_new.pdf">Resume/CV</a>
-        </div>
-        <div class="btn-container">
-            <!--This links to my github page-->
-            <a class="page-link" href="https://github.com/Jprogram722"><i class="fa-brands fa-github"></i> Github</a>
+        <div class="my-section">
+            <h1 class="center-txt">Resume and Projects</h1>
+            <div class="btn-container">
+                <!--This allows users to downlaod my resume to their computers-->
+                <a download class="page-link" href="./docs/resume_JP_new.pdf">Resume/CV</a>
+            </div>
+            <div class="btn-container">
+                <!--This links to my github page-->
+                <a class="page-link" href="https://github.com/Jprogram722"><i class="fa-brands fa-github"></i> Github</a>
+            </div>
         </div>
     </section>
 
     <!--This is the contact me section-->
     <section id="contact">
-        <h1 class="center-txt">Contact Me</h1>
-        <p class="center-txt space-txt-contact">Email: jared.park@smu.ca</p>
-        <div class="btn-container">
-            <!--This links to my linkedin page-->
-            <a class="page-link" href="https://www.linkedin.com/in/jared-park-scotia/"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a>
+        <div class="my-section">
+            <h1 class="center-txt">Contact Me</h1>
+            <p class="center-txt space-txt-contact">Email: jared.park@smu.ca</p>
+            <div class="btn-container">
+                <!--This links to my linkedin page-->
+                <a class="page-link" href="https://www.linkedin.com/in/jared-park-scotia/"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a>
+            </div>
         </div>
     </section>
 </body>

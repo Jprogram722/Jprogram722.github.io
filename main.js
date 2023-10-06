@@ -1,3 +1,0 @@
-/**
- * Auhtor: Jared Park
- */
