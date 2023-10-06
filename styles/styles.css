@@ -12,6 +12,7 @@ html {
 }
 
 body{
+    /* initializes all padding and margins to zero */
     padding: 0;
     margin: 0;
 
@@ -22,19 +23,24 @@ body{
 
 .website-logo{
     padding-top: 10px;
+    /* This sets the logo to 10% of the viewports height */
     height: 10vh;
     display: block;
+
+    /* This centers the logo horizontally on the screen */
     margin: 0 auto;
 }
 
 .navbar{
+    /* fixes the navigation bar the top of the screen and takes up 100% of the width of the screen */
     position: fixed;
     top: 0px;
     width: 100%;
     background-color: #334155;
 }
 
-.container {
+.navlink-container {
+    /* this aligns the navigation links horizontally in the nav bar */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,16 +49,24 @@ body{
 }
 
 .my-section{
+    /* the this makes it so each section takes up 100% of the screen */
     height: 100vh;
     width: 100vw;
+
+    /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
     padding-top: 180px;
+
+
     border-bottom: 20px double #bfd2dd;
 }
 
 .personal-pic{
+    /* adjusts image size depending on screen size */
     height: 30%;
+    /* centers the image */
     display: block;
     margin: 0 auto;
+    /* rounds the image */
     border-radius: 300px;
 }
 
@@ -60,6 +74,8 @@ body{
     font-size: larger;
     margin-top: 50px;
 }
+
+/* these classes are generic and used on text elements */
 
 .center-txt{
     text-align: center;
@@ -71,7 +87,7 @@ body{
 
 .space-txt{
     margin-top: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .space-txt-contact{
@@ -79,17 +95,24 @@ body{
     margin-bottom: 40px;
 }
 
+.large-txt {
+    font-size: larger;
+}
+
 .skills-list{
     margin-top: 40px;
 }
- .last-skill{
-    margin-bottom: 100px;
- }
 
-a{
+.last-skill{
+    margin-bottom: 100px;
+}
+
+a{  
+    /* This makes it so there is no underline on anchor tags */
     text-decoration: none;
 }
 
+/* This effects the properties of the text links the lead to other websites */
 .page-link{
     font-size: larger;
     color: #b17f15;
@@ -97,43 +120,35 @@ a{
     font-weight: bold;
 }
 
+/* changes the color of the background when clicked on. this will be change for desktop */
 .page-link:active{
     background-color: #bfd2dd;
     border-radius: 4px;
 }
 
-
-.btn-container {
+/* centers the page links and spaces them 40px from top */
+.link-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
 }
 
-.navlinks{
+/* This styles the navigation links */
+.navlink-container > a{
     padding: 8px;
     color: #DCF2FF;
     transition: color 70ms linear;
     transition: background-color 70ms linear;
 }
 
-.navlinks:active {
+/* changes color and background when navlink is pressed. change for desktop */
+.navlink-container > a:active{
     color: #334155;
     background-color: #DCF2FF;
 }
 
-.container > a{
-    padding: 8px;
-    color: #DCF2FF;
-    transition: color 70ms linear;
-    transition: background-color 70ms linear;
-}
-
-.container > a:active{
-    color: #334155;
-    background-color: #DCF2FF;
-}
-
+/* This makes it so elements don't appear on the website */
 .hide{
     display: none;
 }
