@@ -49,13 +49,14 @@ body{
 }
 
 .my-section{
-    /* the this makes it so each section takes up 100% of the screen */
-    height: 100vh;
-    width: 100vw;
-
     /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
     padding-top: 180px;
 
+    /* the this makes it so each section takes up 100% of the screen */
+    height: 100vh;
+    width: 98%;
+    margin: 0 auto;
+    
 
     border-bottom: 20px double #bfd2dd;
 }
