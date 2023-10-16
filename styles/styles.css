@@ -12,6 +12,18 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/* This changes the properties of the scrollbar*/
+::-webkit-scrollbar{
+    background-color: #334155;
+    width: 10px;
+}
+
+/* This changes the properties of the thumb or the cursor on the scrollbar */
+::-webkit-scrollbar-thumb {
+    background:#DCF2FF;
+    border-radius: 10px;
+}
+
 body{
     /* initializes all padding and margins to zero */
     padding: 0;
