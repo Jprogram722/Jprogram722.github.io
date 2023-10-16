@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
 html {
     /* Implements smooth scrolling for the entire page */
@@ -22,35 +23,18 @@ body{
 }
 
 .website-logo{
-    padding-top: 10px;
     /* This sets the logo to 10% of the viewports height */
-    height: 10vh;
-    display: block;
-
-    /* This centers the logo horizontally on the screen */
-    margin: 0 auto;
+    height: 8vh;
 }
 
 .navbar{
     /* fixes the navigation bar the top of the screen and takes up 100% of the width of the screen */
     position: fixed;
     top: 0px;
-    width: 100%;
     background-color: #334155;
 }
 
-.navlink-container {
-    /* this aligns the navigation links horizontally in the nav bar */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding-top: 10px;
-}
-
 .my-section{
-    /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
-    padding-top: 180px;
 
     /* the this makes it so each section takes up 100% of the screen */
     height: 100vh;
@@ -72,7 +56,7 @@ body{
 }
 
 .catch-pharse{
-    font-size: larger;
+    font-family: 'Pixelify Sans', sans-serif;
     margin-top: 50px;
 }
 
@@ -121,12 +105,6 @@ a{
     font-weight: bold;
 }
 
-/* changes the color of the background when clicked on. this will be change for desktop */
-.page-link:active{
-    background-color: #bfd2dd;
-    border-radius: 4px;
-}
-
 /* centers the page links and spaces them 40px from top */
 .link-container {
     display: flex;
@@ -144,12 +122,103 @@ a{
 }
 
 /* changes color and background when navlink is pressed. change for desktop */
-.navlink-container > a:active{
-    color: #334155;
-    background-color: #DCF2FF;
-}
 
 /* This makes it so elements don't appear on the website */
 .hide{
     display: none;
+}
+
+@media(max-width: 490px){
+
+    .website-logo{
+        display: block;
+    
+        /* This centers the logo horizontally on the screen */
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .catch-pharse{
+        font-size: x-large;
+    }
+
+    .navlink-container {
+        /* this aligns the navigation links horizontally in the nav bar */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 10px;
+    }
+
+    .my-section{
+        /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
+        padding-top: 180px;
+    }
+
+    /* changes the color of the background when clicked on. this will be change for desktop */
+    .page-link:active{
+        background-color: #bfd2dd;
+        border-radius: 4px;
+    }
+
+    /* changes color and background when navlink is pressed. change for desktop */
+    .navlink-container > a:active{
+        color: #334155;
+        background-color: #DCF2FF;
+    }
+}
+
+@media(min-width: 992px){
+    body{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .catch-pharse{
+        font-size: xx-large;
+    }
+
+    .navbar{
+        padding-top: 10px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navlink-container{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .my-section{
+        /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
+        padding-top: 150px;
+    }
+
+    .page-link{
+        padding: 10px;
+        transition: ease-in-out 75ms;
+    }
+
+    .skills-list{
+        font-size: large;
+    }
+
+    /* changes the color of the background when clicked on. this will be change for desktop */
+    .page-link:hover{
+        background-color: #bfd2dd;
+        border-radius: 4px;
+    }
+
+    .navlink-container > a:hover{
+        color: #334155;
+        background-color: #DCF2FF;
+        border-radius: 4px;
+    }
 }
