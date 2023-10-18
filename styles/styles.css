@@ -9,7 +9,6 @@ html {
 *{  
     /* The webkit code was seen on Stackoverflow by user Aslam (https://stackoverflow.com/questions/45049873/how-to-remove-the-blue-highlight-of-button-on-mobile)*/
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* This changes the properties of the scrollbar*/
@@ -24,6 +23,13 @@ html {
     border-radius: 10px;
 }
 
+/* This makes it so that the corner block blands in with background. 
+source: https://stackoverflow.com/questions/35968553/webkit-scrollbar-css-always-a-white-box-in-corner 
+*/
+::-webkit-scrollbar-corner {
+    background:#334155;
+}
+
 body{
     /* initializes all padding and margins to zero */
     padding: 0;
@@ -32,6 +38,7 @@ body{
     /* Sets the background color and color for the entire html body to be slate and white */
     background-color: #334155;
     color: #DCF2FF;
+    font-family: 'Roboto', sans-serif;
 }
 
 .website-logo{
@@ -43,13 +50,15 @@ body{
     /* fixes the navigation bar the top of the screen and takes up 100% of the width of the screen */
     position: fixed;
     top: 0px;
-    background-color: #334155;
+
+    /* centers the element horizontally */
+    background: #334155;
 }
 
 .my-section{
 
     /* the this makes it so each section takes up 100% of the screen */
-    height: 100vh;
+    min-height: 100vh;
     width: 98%;
     margin: 0 auto;
     
@@ -59,7 +68,7 @@ body{
 
 .personal-pic{
     /* adjusts image size depending on screen size */
-    height: 30%;
+    height: 30vh;
     /* centers the image */
     display: block;
     margin: 0 auto;
@@ -79,7 +88,7 @@ body{
 }
 
 .bold-txt {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .space-txt{
@@ -96,6 +105,14 @@ body{
     font-size: larger;
 }
 
+.slate-txt{
+    color:#334155;
+}
+
+.really-large-txt{
+    font-size: 100px;
+}
+
 .skills-list{
     margin-top: 40px;
 }
@@ -103,6 +120,11 @@ body{
 .last-skill{
     margin-bottom: 100px;
 }
+
+#bulb{
+    color:#e9ae2e;
+}
+
 
 a{  
     /* This makes it so there is no underline on anchor tags */
@@ -133,11 +155,26 @@ a{
     transition: background-color 70ms linear;
 }
 
-/* changes color and background when navlink is pressed. change for desktop */
+.video-container{
+    height: 400px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.plot{
+    border-radius: 10px;
+}
 
 /* This makes it so elements don't appear on the website */
 .hide{
     display: none;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25%
 }
 
 @media(max-width: 490px){
@@ -150,8 +187,19 @@ a{
         padding-top: 10px;
     }
 
+    .proj-content{
+        text-align: center;
+        width: min-content;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .proj-code{
+        display: none;
+    }
+
     .navbar{
-        width: 100%;
+        width: 100vw;
     }
 
     .catch-pharse{
@@ -185,32 +233,59 @@ a{
     }
 }
 
-@media(min-width: 992px){
-    body{
-        margin-left: 10%;
-        margin-right: 10%;
+@media(min-width: 920px){
+
+    .my-section{
+        width: 85%;
+        /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
+        padding-top: 130px;
+        padding-bottom: 20px;
     }
 
     .catch-pharse{
         font-size: xx-large;
     }
 
+    .proj{
+        margin-top: 50px;
+        background-color: #e9ae2e;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .proj-content{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .proj-code{
+        background-color: #1e293b;
+        width: 500px;
+        height: 400px;
+        overflow: scroll;
+    }
+
+    /* makes it so that the code is pre wrapped to the container. source: https://stackoverflow.com/questions/4611591/code-vs-pre-vs-samp-for-inline-and-block-code-snippets 
+    */
+    pre{
+        white-space: pre-wrap;
+    }
+    
     .navbar{
         padding-top: 10px;
-        width: 80%;
+        left: 7.5%;
+        width: 85%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-bottom: 1px solid white;
     }
 
     .navlink-container{
         display: flex;
         gap: 1rem;
-    }
-    
-    .my-section{
-        /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
-        padding-top: 150px;
     }
 
     .page-link{
