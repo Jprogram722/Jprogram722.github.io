@@ -142,6 +142,7 @@ a{
 /* centers the page links and spaces them 40px from top */
 .link-container {
     display: flex;
+    border-radius: 4px;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
@@ -150,6 +151,7 @@ a{
 /* This styles the navigation links */
 .navlink-container > a{
     padding: 8px;
+    border-radius: 4px;
     color: #DCF2FF;
     transition: color 70ms linear;
     transition: background-color 70ms linear;
@@ -300,12 +302,19 @@ a{
     /* changes the color of the background when clicked on. this will be change for desktop */
     .page-link:hover{
         background-color: #bfd2dd;
-        border-radius: 4px;
+    }
+
+    .page-link:focus{
+        background-color: #bfd2dd;
     }
 
     .navlink-container > a:hover{
         color: #334155;
         background-color: #DCF2FF;
-        border-radius: 4px;
+    }
+
+    .navlink-container > a:focus{
+        color: #334155;
+        background-color: #DCF2FF;
     }
 }
