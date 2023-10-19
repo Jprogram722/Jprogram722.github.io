@@ -63,7 +63,7 @@ body{
     margin: 0 auto;
     
 
-    border-bottom: 20px double #bfd2dd;
+    border-bottom: 15px dotted #bfd2dd;
 }
 
 .personal-pic{
@@ -121,10 +121,6 @@ body{
     margin-bottom: 100px;
 }
 
-#bulb{
-    transition: all ease-in-out 50ms;
-}
-
 a{  
     /* This makes it so there is no underline on anchor tags */
     text-decoration: none;
@@ -136,6 +132,7 @@ a{
     color: #b17f15;
     padding: 4px;
     font-weight: bold;
+    border-radius: 4px;
 }
 
 /* centers the page links and spaces them 40px from top */
@@ -164,6 +161,7 @@ a{
 
 .plot{
     border-radius: 10px;
+    height: 35vh;
 }
 
 /* This makes it so elements don't appear on the website */
@@ -178,6 +176,10 @@ a{
     gap: 25%
 }
 
+#bulb{
+    color: #b17f15;
+}
+
 @media(max-width: 490px){
 
     .website-logo{
@@ -188,15 +190,18 @@ a{
         padding-top: 10px;
     }
 
-    .proj-content{
-        text-align: center;
-        width: min-content;
+    .proj{
         display: block;
-        margin: 0 auto;
+        border: 4px dashed #637187;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        text-align: center;
     }
 
-    .proj-code{
-        display: none;
+    .proj > img{
+        display: block;
+        margin: 0 auto;
     }
 
     .navbar{
@@ -248,32 +253,26 @@ a{
     }
 
     .proj{
-        margin-top: 50px;
-        background-color: #e9ae2e;
+        border: 4px dashed #637187;
+        display: flex;
         padding: 20px;
+        width: 700px;
         border-radius: 10px;
+        margin: 20px auto;
     }
 
-    .proj-content{
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
+    .proj-desc{
+        text-align: center;
 
     }
 
     .proj-code{
         background-color: #1e293b;
         width: 500px;
-        height: 400px;
+        height: 417px;
         overflow: scroll;
     }
 
-    /* makes it so that the code is pre wrapped to the container. source: https://stackoverflow.com/questions/4611591/code-vs-pre-vs-samp-for-inline-and-block-code-snippets 
-    */
-    pre{
-        white-space: pre-wrap;
-    }
-    
     .navbar{
         padding-top: 10px;
         left: 7.5%;

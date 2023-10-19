@@ -5,9 +5,7 @@
 */
 
 const inputIndicator = document.querySelector('#input-indicator');
-const lightBulb = document.querySelector('#bulb');
 let present = true;
-let lightOn = false;
 
 function blink() {
     if(present){
@@ -20,16 +18,4 @@ function blink() {
     present = !present;
 }
 
-function bulbBlink(){
-    if(lightOn){
-        lightBulb.style.color = '';
-    }
-    else{
-        lightBulb.style.color = '#e9ae2e';
-    }
-
-    lightOn = !lightOn
-}
-
 setInterval(blink, 530);
-setInterval(bulbBlink, 1000);
