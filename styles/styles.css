@@ -122,9 +122,8 @@ body{
 }
 
 #bulb{
-    color:#e9ae2e;
+    transition: all ease-in-out 50ms;
 }
-
 
 a{  
     /* This makes it so there is no underline on anchor tags */
