@@ -226,13 +226,13 @@ a{
         padding-top: 180px;
     }
 
-    /* changes the color of the background when clicked on. this will be change for desktop */
+    /* changes the color of the background when clicked on*/
     .page-link:active{
         background-color: #bfd2dd;
         border-radius: 4px;
     }
 
-    /* changes color and background when navlink is pressed. change for desktop */
+    /* changes color and background when navlink is pressed.*/
     .navlink-container > a:active{
         color: #334155;
         background-color: #DCF2FF;
@@ -241,6 +241,7 @@ a{
 
 @media(min-width: 920px){
 
+    /* Adjusts the size of the sections to fit the desktop */
     .my-section{
         width: 85%;
         /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
@@ -252,6 +253,7 @@ a{
         font-size: xx-large;
     }
 
+    /* Styles each of the project cards in the resume section */
     .proj{
         border: 4px dashed #637187;
         display: flex;
@@ -261,11 +263,13 @@ a{
         margin: 20px auto;
     }
 
+    /* align text in the project cards to be centered */
     .proj-desc{
         text-align: center;
 
     }
 
+    /*NOT USED*/
     .proj-code{
         background-color: #1e293b;
         width: 500px;
@@ -297,20 +301,22 @@ a{
         font-size: large;
     }
 
-    /* changes the color of the background when clicked on. this will be change for desktop */
+    /* changes the color of the background when hovering over with mouse*/
     .page-link:hover{
         background-color: #bfd2dd;
     }
-
+    /* changes the color of the background when clicked when tabbing*/
     .page-link:focus{
         background-color: #bfd2dd;
     }
 
+    /* changes the color of the background when hovering over with mouse*/
     .navlink-container > a:hover{
         color: #334155;
         background-color: #DCF2FF;
     }
 
+    /* changes the color of the background when clicked when tabbing*/
     .navlink-container > a:focus{
         color: #334155;
         background-color: #DCF2FF;
