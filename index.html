@@ -42,9 +42,9 @@
             <p class="bold-txt center-txt catch-pharse"> > <span id="phrase"></span> <span id="input-indicator">|</span></p>
             <div class="link-container">
                 <!--This links the the contact section at the bottom of the page-->
-                <a class="page-link" href="#contact">Contact Me</a>
+                <a class="call-to-action" href="#contact">Contact Now</a>
             </div>
-            <p class="center-txt space-txt">Scroll   <i class="fa-solid fa-arrow-down"></i>   for more info</p>
+            <p class="center-txt space-txt">Or scroll   <i class="fa-solid fa-arrow-down"></i>   for more info</p>
         </div>
     </section>
 
@@ -55,7 +55,7 @@
             <p class="bold-txt center-txt space-txt large-txt">Solving complex problems is my calling</p>
             <p class="bold-txt center-txt space-txt large-txt">My vision is a knowledgable world where uncertainty is no issue</p>
             <div class="icons">
-                <!--Font awesome spinning gear icon-->
+                <!--Font awesome gear and lightbulb icon-->
                 <p class="really-large-txt"><i class="fa-solid fa-gear"></i></p>
                 <p class="really-large-txt" id="bulb"><i class="fas fa-lightbulb"></i></p>
             </div>
@@ -66,6 +66,7 @@
     <section id="skills">
         <div class="my-section">
             <h1 class="center-txt">Skills</h1>
+            <!--unordered list of skills-->
             <ul>
                 <li class="skills-list">Data anaylsis using pandas (python data analysis framework)</li>
                 <li class="skills-list">Data manipulation and storage using SQL</li>
@@ -73,7 +74,7 @@
                 <li class="skills-list last-skill">Data visualization in python and Javascript</li>
             </ul>
             <div class="icons">
-                <!--Font awesome spinning gear icon-->
+                <!--Font awesome python and javascript icons-->
                 <p class="really-large-txt"><i class="fa-brands fa-python"></i></p>
                 <p class="really-large-txt"><i class="fa-brands fa-js"></i></p>
             </div>
@@ -93,8 +94,12 @@
                 <a class="page-link" href="https://github.com/Jprogram722"><i class="fa-brands fa-github"></i> Github</a>
             </div>
 
+            <!--The divs with class proj are the containers for each of the projects-->
+            <p class="center-txt large-txt space-txt">Project Showcase</p>
             <div class="proj">
+                <!--bar chart image-->
                 <img class="plot" src="./pictures/NSCCPrograms.png" alt="bar chart of NSIT Programs">
+                <!--Description of the project-->
                 <div class="proj-desc">
                     <p class="large-txt center-txt bold-txt space-txt">Web Scraping Data With Python</p>
                     <p class="bold-txt">The data here was collected by scrapping the NSCC program page with python.</p>
@@ -105,12 +110,14 @@
             <div class="proj">
                 <div class="video-section">
                     <div class="video-container">
-                        <video height="400" controls>
+                        <!--grab the video demoing the device. the controls attribute allows you to interace with video-->
+                        <video height="350" controls>
                             <source src="./vid/position_sensor_Jared_Park.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="proj-desc">
+                    <!--Description of the project-->
                     <p class="large-txt center-txt bold-txt space-txt">Arduino Tilt Sensor</p>
                     <p class="bold-txt">An Arduino is hooked up to an gyro sensor to read tilt measurements.</p>
                     <p class="bold-txt">The objective was to build a a device that physically indicates what direction its tilted.</p>
@@ -120,6 +127,7 @@
             <div class="proj">
                 <img class="plot" src="./pictures/Device_setup.jpg" alt="picture of arduino tuner">
                 <div class="proj-desc">
+                    <!--Description of the project-->
                     <p class="large-txt center-txt bold-txt space-txt">Analyzing Frequencies With Arduino</p>
                     <p class="bold-txt">An Arduino is hooked up to an microphone to measure not frequencies.</p>
                     <p class="bold-txt">The objective was to measue the frequency of guitar notes to see if there's a change depending on amplitude.</p>
