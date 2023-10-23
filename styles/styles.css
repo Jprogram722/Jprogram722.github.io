@@ -169,12 +169,14 @@ a{
     transition: background-color 70ms linear;
 }
 
-/* adjusts the size of the video */
+/* 
 .video-container{
     height: 350px;
     border-radius: 4px;
     overflow: hidden;
 }
+
+*/
 
 /* adjusts the size of the bar graph in resume section */
 .plot{
