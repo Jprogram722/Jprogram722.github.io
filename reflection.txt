@@ -1,0 +1,5 @@
+I found that the transitioning my website from a site designed for mobile phones to a site 
+designed for desktop computers was pretty simple compared to building the website from scratch for mobile.
+Most of the desktop development has focuses on taking the work that I already did for the mobile site and formatting it to look nice on desktop.
+From this expirence I learned just how powerful media queries as they make it really easy to adjust you websites layout depending viewport.
+Finally when taking my project from the mobile view to desktop view I found that I had alot more white space then needed so it gave me more motivation to add some details to flesh it out which resulted in the about me section, the fount awesome logos in my mission and vision section, and the project cards and my resume and projects section.
