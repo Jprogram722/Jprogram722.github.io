@@ -235,7 +235,9 @@ a{
 
     /* size of the catch phrase */
     .catch-pharse{
-        font-size: x-large;
+        padding-top: 50px;
+        font-size: 42px;
+        padding-bottom: 50px;
     }
 
     .navlink-container {
@@ -273,15 +275,17 @@ a{
 
     /* Adjusts the size of the sections to fit the desktop */
     .my-section{
-        width: 85%;
+        width: 782px;
         /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
         padding-top: 130px;
         padding-bottom: 20px;
     }
 
-    /* size of the catch phrase */
+    /* styles for the catch phrase */
     .catch-pharse{
-        font-size: xx-large;
+        font-size: 52px;
+        padding-top: 100px;
+        padding-bottom: 50px;
     }
 
     /* Styles each of the project cards in the resume section */
