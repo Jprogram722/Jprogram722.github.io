@@ -236,7 +236,7 @@ a{
     /* size of the catch phrase */
     .catch-pharse{
         padding-top: 50px;
-        font-size: 42px;
+        font-size: 30px;
         padding-bottom: 50px;
     }
 
@@ -269,6 +269,42 @@ a{
         color: #334155;
         background-color: #DCF2FF;
     }
+}
+
+@media screen and (min-width: 491px) and (max-width: 919px){
+    .navbar{
+        width: 100vw;
+    }
+
+    .navlink-container {
+        /* this aligns the navigation links horizontally in the nav bar */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 10px;
+    }
+
+    .website-logo{
+        display: block;
+    
+        /* This centers the logo horizontally on the screen */
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    /* Adjusts the size of the sections to fit the desktop */
+    .my-section{
+        padding-top: 180px;
+    }
+
+    /* size of the catch phrase */
+    .catch-pharse{
+        padding-top: 50px;
+        font-size: 2em;
+        padding-bottom: 50px;
+    }
+
 }
 
 @media(min-width: 920px){
