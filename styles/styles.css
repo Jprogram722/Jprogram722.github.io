@@ -53,6 +53,9 @@ body{
 
     /* centers the element horizontally */
     background: #334155;
+
+    /* prevent elements from clipping into the navbar */
+    z-index: 1;
 }
 
 .my-section{
@@ -181,12 +184,23 @@ a{
 /* adjusts the size of the bar graph in resume section */
 .plot{
     border-radius: 10px;
-    height: 35vh;
+    height: 30vh;
 }
 
 /* This makes it so elements don't appear on the website */
 .hide{
     display: none;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(75px);
+    transition: all 1s;
+}
+
+.show{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* styles the font awesome icons that are using in the sections */
@@ -210,6 +224,12 @@ a{
         /* This centers the logo horizontally on the screen */
         margin: 0 auto;
         padding-top: 10px;
+    }
+
+    /* adjusts the size of the bar graph in resume section */
+    .plot{
+        height: 30vh;
+        width: 350px;
     }
 
     /* styling for the project container on mobile */
@@ -245,13 +265,13 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 5px;
         padding-top: 10px;
     }
 
     .my-section{
         /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
-        padding-top: 180px;
+        padding-top: 150px;
     }
 
     /* changes the color of the background when clicked on*/
@@ -338,6 +358,11 @@ a{
     .proj-desc{
         text-align: center;
 
+    }
+
+    /* adjusts the size of the bar graph in resume section */
+    .plot{
+        height: 35vh;
     }
 
     /*NOT USED*/
