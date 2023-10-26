@@ -7,6 +7,7 @@
 /*
     This code was provided by the youtube channel fireship in his video 
     Subtle, yet Beautiful Scroll Animations (https://www.youtube.com/watch?v=T33NN_pPeNI&t=230s)
+    also here is the documentation for IntersectionObserver (https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 */ 
 
 // creates an observer object

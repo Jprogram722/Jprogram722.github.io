@@ -61,7 +61,7 @@ body{
 .my-section{
 
     /* the this makes it so each section takes up 100% of the screen */
-    min-height: 100vh;
+    min-height: 80vh;
     width: 98%;
     margin: 0 auto;
     
@@ -194,12 +194,12 @@ a{
 
 .hidden{
     opacity: 0;
-    transform: translateY(75px);
+    transform: translateX(-75px);
     transition: all 1s;
 }
 
 .show{
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
 }
 
@@ -376,11 +376,12 @@ a{
     /* this puts the logo and column in the same run row and spacing them out*/
     .navbar{
         padding-top: 10px;
-        left: 7.5%;
-        width: 85%;
+        left: 0%;
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 25vw;
         border-bottom: 1px solid white;
     }
 
