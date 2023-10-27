@@ -37,6 +37,20 @@ body{
 
     /* Sets the background color and color for the entire html body to be slate and white */
     background-color: #334155;
+
+    /* 
+    The code for this background was provided by kevin powell in his youtube video 
+    Create amazing patterns using CSS gradients (https://www.youtube.com/watch?v=mXrBC_mZfTw)
+    */
+    background-image: conic-gradient(
+        from 330deg at 50% 40%,
+        #48505f 60deg,
+        transparent 60deg
+    );
+    background-size: 3rem 4rem;
+    background-position: 0 0, 1rem 2rem;
+    
+    
     color: #DCF2FF;
     font-family: 'Roboto', sans-serif;
 }
@@ -76,7 +90,7 @@ body{
     display: block;
     margin: 0 auto;
     /* rounds the image */
-    border-radius: 300px;
+    border-radius: 100%;
 }
 
 /* styling the catch phrase */
@@ -199,6 +213,8 @@ a{
 }
 
 .show{
+    margin: 0 auto;
+    width: 80vw;
     transform: translateX(0);
     opacity: 1;
 }
@@ -213,7 +229,45 @@ a{
 
 /* color the font awesome light bulb */
 #bulb{
+    font-size: 60px;
     color: #b17f15;
+    margin-bottom: 30px;
+}
+
+#person{
+    font-size: 200px;
+}
+
+.m-v-layout{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.mission{
+    padding: 10px;
+    font-size: 30px;
+    background-color: #637187;
+    border-radius: 4px;
+}
+
+.complex-icon{
+    text-align: center;
+    padding: 5px;
+    font-size: 100px;
+    color: #334155;
+    background-color: #DCF2FF;
+    border-radius: 4px;
+}
+
+.vision-icon{
+    text-align: center;
+    padding: 10px;
+    background-color: #DCF2FF;
+    color: #334155;
+    border-radius: 4px;
 }
 
 @media(max-width: 490px){
@@ -228,14 +282,14 @@ a{
 
     /* adjusts the size of the bar graph in resume section */
     .plot{
-        height: 30vh;
-        width: 350px;
+        width: 68vw;
     }
 
     /* styling for the project container on mobile */
     .proj{
         display: block;
-        border: 4px dashed #637187;
+        background-color: #334155;
+        border: 4px solid #637187;
         padding: 20px;
         border-radius: 10px;
         margin: 20px 0;
@@ -289,6 +343,28 @@ a{
         color: #334155;
         background-color: #DCF2FF;
     }
+
+    .m-v-layout{
+        display: grid;
+        grid-template-columns: repeat(1, 400px);
+        gap: 7vw;
+    }
+
+    .mission{
+        padding: 10px;
+        font-size: 20px;
+        background-color: #48505f;
+        border-radius: 4px;
+    }
+
+    .complex-icon{
+        text-align: center;
+        padding: 5px;
+        font-size: 100px;
+        color: #334155;
+        background-color: #DCF2FF;
+        border-radius: 4px;
+    }
 }
 
 @media screen and (min-width: 491px) and (max-width: 919px){
@@ -331,7 +407,7 @@ a{
 
     /* Adjusts the size of the sections to fit the desktop */
     .my-section{
-        width: 782px;
+        width: 85%;
         /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
         padding-top: 130px;
         padding-bottom: 20px;
@@ -339,14 +415,15 @@ a{
 
     /* styles for the catch phrase */
     .catch-pharse{
-        font-size: 52px;
+        font-size: 5.5vw;
         padding-top: 100px;
         padding-bottom: 50px;
     }
 
     /* Styles each of the project cards in the resume section */
     .proj{
-        border: 4px dashed #637187;
+        border: 4px solid #637187;
+        background-color: #334155;
         display: flex;
         padding: 20px;
         width: 700px;
