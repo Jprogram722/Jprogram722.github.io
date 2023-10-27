@@ -254,8 +254,7 @@ a{
     display: grid;
     grid-template-columns: repeat(4, 13em);
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .grid-odd{
@@ -372,9 +371,13 @@ a{
     }
 
     .m-v-layout{
-        display: grid;
-        grid-template-columns: repeat(1, 400px);
+        grid-template-columns: repeat(1, 25em);
         gap: 7vw;
+    }
+
+    .skills-layout{
+        grid-template-columns: repeat(2, 13em);
+        margin-bottom: 40px;
     }
 
     .mission{
