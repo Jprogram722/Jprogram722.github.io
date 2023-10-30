@@ -247,6 +247,7 @@ a{
     grid-template-columns: repeat(2, 25em);
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     gap: 50px;
 }
 
@@ -254,6 +255,7 @@ a{
     display: grid;
     grid-template-columns: repeat(4, 13em);
     justify-content: center;
+    margin-top: 50px;
     gap: 30px;
 }
 
