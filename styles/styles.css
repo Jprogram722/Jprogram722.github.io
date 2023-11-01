@@ -34,21 +34,6 @@ body{
     /* initializes all padding and margins to zero */
     padding: 0;
     margin: 0;
-
-    /* Sets the background color and color for the entire html body to be slate and white */
-    background-color: #334155;
-
-    /* 
-    The code for this background was provided by kevin powell in his youtube video 
-    Create amazing patterns using CSS gradients (https://www.youtube.com/watch?v=mXrBC_mZfTw)
-    */
-    background-image: conic-gradient(
-        from 330deg at 50% 40%,
-        #48505f 60deg,
-        transparent 60deg
-    );
-    background-size: 3rem 4rem;
-    background-position: 0 0, 1rem 2rem;
     
     
     color: #DCF2FF;
@@ -78,25 +63,74 @@ body{
     min-height: 80vh;
     width: 98%;
     margin: 0 auto;
-    
+}
 
-    border-bottom: 15px dotted #bfd2dd;
+section:nth-child(even){
+    /* Sets the background color and color for all sections to be slate and white */
+    background-color: #334155;
+
+    /* 
+    The code for this background was provided by kevin powell in his youtube video 
+    Create amazing patterns using CSS gradients (https://www.youtube.com/watch?v=mXrBC_mZfTw)
+    */
+    background-image: radial-gradient(
+        circle at 100% 50%,
+        transparent 1rem,
+        #48505f 1rem,
+        #48505f 1.5rem,
+        transparent 1.5rem
+    ),
+    radial-gradient(
+        circle at 0 50%,
+        transparent 1rem,
+        #48505f 1rem,
+        #48505f 1.5rem,
+        transparent 1.5rem
+    );
+    background-size: 9rem 5rem;
+    background-position: 0 0, 0 2.5rem;
+}
+
+section:nth-child(odd){
+    /* Sets the background color and color for all sections to be slate and white */
+    background-color: #48505f;
+
+     /* 
+    The code for this background was provided by kevin powell in his youtube video 
+    Create amazing patterns using CSS gradients (https://www.youtube.com/watch?v=mXrBC_mZfTw)
+    */
+    background-image: radial-gradient(
+        circle at 100% 50%,
+        transparent 1rem,
+        #334155 1rem,
+        #334155 1.5rem,
+        transparent 1.5rem
+    ),
+    radial-gradient(
+        circle at 0 50%,
+        transparent 1rem,
+        #334155 1rem,
+        #334155 1.5rem,
+        transparent 1.5rem
+    );
+    background-size: 9rem 5rem;
+    background-position: 0 0, 0 2.5rem;
 }
 
 .personal-pic{
     /* adjusts image size depending on screen size */
-    height: 30vh;
+    height: 230px;
     /* centers the image */
     display: block;
     margin: 0 auto;
     /* rounds the image */
-    border-radius: 100%;
+    border-radius: 300%;
+    border: 3px solid #DCF2FF;
 }
 
 /* styling the catch phrase */
 .catch-pharse{
     font-family: 'Pixelify Sans', sans-serif;
-    margin-top: 50px;
 }
 
 /* these classes are generic and used on text elements */
@@ -181,6 +215,23 @@ a{
     margin-top: 25px;
 }
 
+.resume-container{
+    margin: 0 auto;
+    border: 2px solid #48505f;
+    background-color: #273241;
+    border-radius: 100px;
+    width: 220px;
+    gap: 0;
+}
+
+#resume-link{
+    border-radius: 100px 0 0 100px;
+}
+
+#github-link{
+    border-radius: 0 100px 100px 0;
+}
+
 /* This styles the navigation links */
 .navlink-container > a{
     padding: 8px;
@@ -188,6 +239,11 @@ a{
     color: #DCF2FF;
     transition: color 70ms linear;
     transition: background-color 70ms linear;
+}
+
+.navlink{
+    font-weight: bold;
+    font-size: large;
 }
 
 /* 
@@ -254,7 +310,7 @@ a{
     display: grid;
     grid-template-columns: repeat(4, 13em);
     justify-content: center;
-    gap: 30px;
+    gap: 2vw;
 }
 
 .grid-odd{
@@ -331,6 +387,7 @@ a{
     /* makes navbar take up the whole veiw port width */
     .navbar{
         width: 100vw;
+        border-bottom: 1px solid #DCF2FF;
     }
 
     /* size of the catch phrase */
@@ -437,17 +494,38 @@ a{
 
     /* Adjusts the size of the sections to fit the desktop */
     .my-section{
-        width: 85%;
+        width: 100%;
         /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
         padding-top: 130px;
         padding-bottom: 20px;
     }
 
+    .navlink{
+        font-size: large;
+    }
+
+    .flex{
+        padding-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6vw;
+    }
+
+    .hero-description{
+        width: 600px;
+    }
+
+    .personal-pic{
+        border-radius: 100%;
+        width: 240px;
+        height: auto;
+    }
+
     /* styles for the catch phrase */
     .catch-pharse{
-        font-size: 5vw;
-        padding-top: 100px;
-        padding-bottom: 50px;
+        font-size: 40px;
+        padding-bottom: 40px;
     }
 
     /* Styles each of the project cards in the resume section */

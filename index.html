@@ -21,15 +21,14 @@
         <!--This is the container for the navbar-->
         <div class="navbar">
             <!-- This img element inserts a picture of my logo in the website -->
-            <img class="website-logo" src="./pictures/logo-png.jpg" alt="Logo img">
+            <img class="website-logo" src="./pictures/logo-sqoosh.jpg" alt="Logo img">
             <!--This is the container for the links in the navbar that take you around the page-->
             <div class="navlink-container">
-                <a href="#hero">Home</a>
-                <a href="#about">About</a>
-                <a  href="#m-v">M&V</a>
-                <a  href="#skills">Skills</a>
-                <a  href="#resume">Resume</a>
-                <a  href="#contact">Contact</a>
+                <a class="navlink" href="#hero">Home</a>
+                <a  class="navlink" href="#m-v">M&V</a>
+                <a  class="navlink" href="#skills">Skills</a>
+                <a  class="navlink" href="#resume">Resume</a>
+                <a  class="navlink" href="#contact">Contact</a>
             </div>
         </div>
     </header>
@@ -40,25 +39,21 @@
         <h1 class="hide">Hero</h1>
         <!-- This img element inserts a picture of me in the website -->
         <div class="my-section">
-            <p class="bold-txt center-txt catch-pharse"> > <span id="phrase"></span> <span id="input-indicator">|</span></p>
-            <div class="link-container">
-                <!--This links the the contact section at the bottom of the page-->
-                <a class="call-to-action" href="#contact">Contact Me</a>
-            </div>
-            <p class="center-txt space-txt">Or scroll   <i class="fa-solid fa-arrow-down"></i>   for more info</p>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="my-section">
-            <!--Personal Pic of me-->
-            <div class="hidden">
-                <img class="personal-pic" src="./pictures/selfie_squoosh.jpg" alt="personal picture">
-                <!--Introductions-->
-                <h1 class="center-txt space-txt">Greetings!</h1>
-                <p class="space-txt large-txt">I'm Jared. I recently graduated from the Saint Mary's University with a Bachelor Of Science with a major in Physics. I love working with technology and solving challanging problems and want to apply the mathematical and analytical problem solving skills that I learned in university to the field of data analytics.</p>
-                <p class="space-txt large-txt">I primarily work with python and javascript but I am a great learner and can pick up on new tools quickly to fit the job.</p>
+            <div class="flex">
+                <div>
+                    <img class="personal-pic" src="./pictures/selfie_squoosh.jpg" alt="personal picture">
+                </div>
+                <div class="hero-description">
+                    <p class="bold-txt center-txt catch-pharse"> > <span id="phrase"></span> <span id="input-indicator">|</span></p>
+                    <p class="large-txt">I'm Jared. A former Physicist and future Data Analyst.</p>
+                    <p class="large-txt">I analyze and visualize data to identify and solve problems your business is facing today to prepare your business for the challanges of tomorrow.</p>
+                    <p class="large-txt"></p>
+                    <div class="link-container">
+                        <!--This links the the contact section at the bottom of the page-->
+                        <a class="call-to-action" href="#contact">Contact Me</a>
+                    </div>
+                    <p class="large-txt center-txt space-txt">Or scroll   <i class="fa-solid fa-arrow-down"></i>   for more info</p>
+                </div>
             </div>
         </div>
     </section>
@@ -124,10 +119,10 @@
         <div class="my-section">
             <div class="hidden">
                 <h1 class="center-txt">Resume and Projects</h1>
-                <div class="link-container">
+                <div class="link-container resume-container">
                     <!--This allows users to downlaod my resume to their computers-->
-                    <a download class="page-link" href="./docs/resume_JP_new.pdf">Resume/CV</a>
-                    <a class="page-link" href="https://github.com/Jprogram722"><i class="fa-brands fa-github"></i> Github</a>
+                    <a download id="resume-link" class="page-link" href="./docs/resume_JP_new.pdf">Resume/CV</a>
+                    <a id="github-link" class="page-link" href="https://github.com/Jprogram722"><i class="fa-brands fa-github"></i> Github</a>
                 </div>
 
                 <!--The divs with class proj are the containers for each of the projects-->
