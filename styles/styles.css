@@ -35,8 +35,10 @@ body{
     padding: 0;
     margin: 0;
     
-    
+    /* Sets the color of the fonts in the website */
     color: #DCF2FF;
+
+    /* Sets the font familly in the website */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -376,6 +378,7 @@ a{
         border-radius: 10px;
         margin: 20px 0;
         text-align: center;
+        filter: drop-shadow();
     }
 
     /* centers the image in the project container */
@@ -537,6 +540,7 @@ a{
         width: 700px;
         border-radius: 10px;
         margin: 20px auto;
+        box-shadow: .3rem .3rem;
     }
 
     /* align text in the project cards to be centered */
