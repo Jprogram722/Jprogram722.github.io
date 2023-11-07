@@ -37,6 +37,7 @@ body{
     
     /* Sets the color of the fonts in the website */
     color: #DCF2FF;
+    background-color: #334155;
 
     /* Sets the font familly in the website */
     font-family: 'Roboto', sans-serif;
@@ -90,7 +91,6 @@ section:nth-child(even){
         transparent 1.5rem
     );
     background-size: 9rem 5rem;
-    background-position: 0 0, 0 2.5rem;
 }
 
 section:nth-child(odd){
@@ -116,7 +116,6 @@ section:nth-child(odd){
         transparent 1.5rem
     );
     background-size: 9rem 5rem;
-    background-position: 0 0, 0 2.5rem;
 }
 
 .personal-pic{
@@ -127,7 +126,7 @@ section:nth-child(odd){
     margin: 0 auto;
     /* rounds the image */
     border-radius: 300%;
-    border: 3px solid #DCF2FF;
+    border: 5px solid #DCF2FF;
 }
 
 /* styling the catch phrase */
@@ -397,7 +396,7 @@ a{
 
     /* size of the catch phrase */
     .catch-pharse{
-        padding-top: 50px;
+        padding-top: 15px;
         font-size: 30px;
         padding-bottom: 50px;
     }
@@ -445,7 +444,7 @@ a{
     .mission{
         padding: 10px;
         font-size: 20px;
-        background-color: #48505f;
+        background-color: #637187;
         border-radius: 4px;
     }
 
