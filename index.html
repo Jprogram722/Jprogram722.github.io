@@ -14,6 +14,7 @@
     <!--These allows the webpage to access the local JavaScript files (defer excutes code after page finishes loading https://www.w3schools.com/tags/att_script_defer.asp)-->
 
     <script src="./type.js" defer></script>
+    <script src="slideShow.js" defer></script>
     <script src="./scroll.js" defer></script>
 </head>
 <body>
@@ -39,14 +40,14 @@
         <h1 class="hide">Hero</h1>
         <!-- This img element inserts a picture of me in the website -->
         <div class="my-section">
-            <div class="flex">
+            <div class="hero-container">
                 <div>
                     <img class="personal-pic" src="./pictures/selfie_squoosh.jpg" alt="personal picture">
                 </div>
                 <div class="hero-description">
                     <p class="bold-txt catch-pharse"> > <span id="phrase"></span> <span id="input-indicator">|</span></p>
-                    <p class="large-txt">I'm Jared. A former Physicist and future Data Analyst.</p>
-                    <p class="large-txt">I analyze and visualize data to identify and solve problems your business is facing today to prepare your business for the challanges of tomorrow.</p>
+                    <p class="large-txt bold-txt">I'm Jared. A former Physicist and future Data Analyst.</p>
+                    <p class="large-txt bold-txt">I analyze and visualize data to identify and solve problems your business is facing today to prepare your business for the challanges of tomorrow.</p>
                     <p class="large-txt"></p>
                     <div class="link-container">
                         <!--This links the the contact section at the bottom of the page-->
@@ -61,8 +62,12 @@
     <!-- Mission and Vision Section -->
     <section id="m-v">
         <div class="my-section">
+
+            <!--This is class used for transitioning between sections-->
             <div class="hidden">
                 <h1 class="center-txt">Mission and Vision</h1>
+
+                <!--This is the grid layout for the mission and visison section-->
                 <div class="m-v-layout">
                     <div class="mission">
                         <p class="bold-txt center-txt space-txt large-txt">Solving complex problems is my calling!</p>
@@ -89,10 +94,14 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="my-section">
+
+            <!--This is class used for transitioning between sections-->
             <div class="hidden">
                 <h1 class="center-txt">Skills</h1>
+
+                <!--This is the grid layout of the skills section-->
                 <div class="skills-layout">
-                    <!--unordered list of skills-->
+                    <!--The grids are devided up between even and odd grids-->
                     <div class="grid-odd">
                         <p class="bold-txt">Data anaylsis using pandas (python data analysis framework)</p>
                         <p class="center-txt larger-txt"><i class="fa-brands fa-python"></i></p>
@@ -117,45 +126,74 @@
     <!-- This is the resume and projects section -->
     <section id="resume">
         <div class="my-section">
+
+            <!--This is class used for transitioning between sections-->
             <div class="hidden">
                 <h1 class="center-txt">Resume and Projects</h1>
                 <div class="link-container resume-container">
                     <!--This allows users to downlaod my resume to their computers-->
                     <a download id="resume-link" class="page-link" href="./docs/resume_JP_new.pdf">Resume/CV</a>
+
+                    <!--Link to my github account-->
                     <a id="github-link" class="page-link" href="https://github.com/Jprogram722"><i class="fa-brands fa-github"></i> Github</a>
                 </div>
 
+
                 <!--The divs with class proj are the containers for each of the projects-->
                 <p class="center-txt large-txt space-txt">Project Showcase</p>
-                <div class="proj">
-                    <!--bar chart image-->
-                    <img class="plot" src="./pictures/NSCCPrograms.png" alt="bar chart of NSIT Programs">
-                    <!--Description of the project-->
-                    <div class="proj-desc">
-                        <p class="large-txt center-txt bold-txt space-txt">Web Scraping Data With Python</p>
-                        <p>The data here was collected by scrapping the NSCC program page with python.</p>
-                        <p>The objective was to see if the IT campus offered more IT programs than other programs.</p>
+                
+                <div class="proj-showcase">
+
+                    <div class="hiddenSlide slide">
+                        <!--Project Container-->
+                        <div class="proj">
+                            <!--bar chart image-->
+                            <img class="plot" src="./pictures/NSCCPrograms.png" alt="bar chart of NSIT Programs">
+                            <!--Description of the project-->
+                            <div class="proj-desc">
+                                <p class="large-txt center-txt bold-txt space-txt">Web Scraping Data With Python</p>
+                                <p>The data here was collected by scrapping the NSCC program page with python.</p>
+                                <p>The objective was to see if the IT campus offered more IT programs than other programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hiddenSlide">
+                        <!--Project Container-->
+                        <div class="proj">
+                            <!--Aurduino image-->
+                            <img class="plot" src="./pictures/Device_setup.jpg" alt="picture of arduino tuner">
+                            <div class="proj-desc">
+                                <!--Description of the project-->
+                                <p class="large-txt center-txt bold-txt space-txt">Analyzing Frequencies With Arduino</p>
+                                <p>An Arduino is hooked up to an microphone to measure guitar note frequencies.</p>
+                                <p>The objective was to record the frequency of guitar notes and analyze the recorded data to see if the frequency changed depending on distortion.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hiddenSlide">
+                        <!--Project Container-->
+                        <div class="proj">
+                            <!--Streamlit image-->
+                            <img class="plot" src="./pictures/Streamlit.jpg" alt="picture of arduino tuner">
+                            <div class="proj-desc">
+                                <!--Description of the project-->
+                                <p class="large-txt center-txt bold-txt space-txt">Streamlit Stock Price App</p>
+                                <p>Streamlit python app that allows you to view stock price info of a user inputted company.</p>
+                                <p>The objective was to build a web application that showed only the data requested by the user.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <p class="card-number bold-txt hide"></p>
+                <p class="card-number bold-txt hide"></p>
+                <p class="card-number bold-txt hide"></p>
 
-                <div class="proj">
-                    <img class="plot" src="./pictures/Device_setup.jpg" alt="picture of arduino tuner">
-                    <div class="proj-desc">
-                        <!--Description of the project-->
-                        <p class="large-txt center-txt bold-txt space-txt">Analyzing Frequencies With Arduino</p>
-                        <p>An Arduino is hooked up to an microphone to measure guitar note frequencies.</p>
-                        <p>The objective was to record the frequency of guitar notes and analyze the recorded data to see if the frequency changed depending on distortion.</p>
-                    </div>
-                </div>
-
-                <div class="proj">
-                    <img class="plot" src="./pictures/Streamlit.jpg" alt="picture of arduino tuner">
-                    <div class="proj-desc">
-                        <!--Description of the project-->
-                        <p class="large-txt center-txt bold-txt space-txt">Streamlit Stock Price App</p>
-                        <p>Streamlit python app that allows you to view stock price info of a user inputted company.</p>
-                        <p>The objective was to build a web application that showed only the data requested by the user.</p>
-                    </div>
+                <!--Buttons that control the projects shown-->
+                <div class="project-btns">
+                    <button class=" btn left-btn" onclick="subIndex()"><i class="fa-solid fa-minus"></i></button>
+                    <button class=" btn right-btn" onclick="addIndex()"><i class="fa-solid fa-plus"></i></i></button>
                 </div>
             </div>
         </div>
@@ -164,8 +202,11 @@
     <!--This is the contact me section-->
     <section id="contact">
         <div class="my-section">
+
+                <!--This is class used for transitioning between sections-->
                 <div class="hidden">
                 <h1 class="center-txt">Contact Me</h1>
+                <!--Email link-->
                 <p class="center-txt space-txt-contact large-txt bold-txt"><i class="fa-solid fa-envelope"></i> W0482161@nscc.ca</p>
                 <div class="link-container">
                     <!--This links to my linkedin page-->
