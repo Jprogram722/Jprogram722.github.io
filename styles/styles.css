@@ -416,7 +416,7 @@ a{
 
     /* adjusts the size of the bar graph in resume section */
     .plot{
-        height: 27vh;
+        height: 25vh;
         width: auto;
     }
 
@@ -429,7 +429,7 @@ a{
         border-radius: 10px;
         margin: 20px 0;
         text-align: center;
-        height: 500px;
+        height: 570px;
         box-shadow: .3rem .3rem;
     }
 
