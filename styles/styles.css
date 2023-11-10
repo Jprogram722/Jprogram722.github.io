@@ -380,29 +380,21 @@ a{
     margin-top: 25px;
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 /* Styles the buttons that increase and decrease the project index */
 .btn{
     cursor: pointer;
     font-size: xx-large;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 7px;
     padding-bottom: 7px;
-    color:#DCF2FF;
-    background-color: #334155;
-    border: 2px solid #637187;
-}
-
-/* Styles the button that decreases the project index */
-.left-btn{
-    border-radius: 10px 0 0 10px;
-}
-
-/* Styles the button that increases the project index */
-.right-btn{
-    border-radius: 0 10px 10px 0;
+    color:#334155;
+    background-color: #c99117;
+    border: none;
+    border-radius: 10px;
 }
 
 /* applies the slide down animation to the project card along with a duration */
@@ -521,7 +513,7 @@ a{
 
     /* changes the background of the project card buttons when pressed in mobile view */
     .btn:active{
-        background-color: #1e293b;
+        background-color: #a57714;
     }
 
     /* Changes the properties of the card numbers on the cards for mobile*/
@@ -700,7 +692,7 @@ a{
 
     /* changes the color of the background when hovering over with mouse*/
     .btn:hover{
-        background-color: #1e293b;
+        background-color: #a57714;
     }
 
     /* Changes the properties of the card numbers on the cards for desktop*/
