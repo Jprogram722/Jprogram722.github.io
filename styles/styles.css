@@ -386,10 +386,10 @@ a{
 .btn{
     cursor: pointer;
     font-size: xx-large;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     color:#DCF2FF;
     background-color: #334155;
     border: 2px solid #637187;
@@ -529,7 +529,7 @@ a{
         position: fixed;
         left: 315px;
         top: 81%;
-        padding: 10px;
+        padding: 6px;
         border-radius: 100%;
         background-color: #DCF2FF;
         color: #334155;
