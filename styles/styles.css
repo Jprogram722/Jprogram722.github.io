@@ -51,7 +51,7 @@ body{
 .navbar{
     /* fixes the navigation bar the top of the screen and takes up 100% of the width of the screen */
     position: fixed;
-    top: 0px;
+    top: 0;
 
     /* centers the element horizontally */
     background: #334155;
@@ -64,7 +64,7 @@ body{
 
     /* the this makes it so each section takes up 100% of the screen */
     min-height: 80vh;
-    width: 98%;
+    width: 98vw;
     margin: 0 auto;
     padding-bottom: 20px;
 }
@@ -149,7 +149,7 @@ section:nth-child(odd){
 
 .space-txt{
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .space-txt-contact{
@@ -526,9 +526,9 @@ a{
 
     /* Changes the properties of the card numbers on the cards for mobile*/
     .card-number{
-        position: fixed;
-        left: 315px;
-        top: 81%;
+        margin: 0 auto;
+        text-align: center;
+        width: 25px;
         padding: 6px;
         border-radius: 100%;
         background-color: #DCF2FF;
@@ -604,7 +604,7 @@ a{
     /* adjusts the personal picture for desktop */
     .personal-pic{
         border-radius: 100%;
-        width: 240px;
+        width: 230px;
         height: auto;
     }
 
@@ -640,7 +640,7 @@ a{
 
     /* adjusts the size of the bar graph in resume section */
     .plot{
-        height: 32vh;
+        height: 300px;
     }
 
     /* this puts the logo and column in the same run row and spacing them out*/
@@ -690,9 +690,9 @@ a{
 
     /* Changes the properties of the card numbers on the cards for desktop*/
     .card-number{
-        position: fixed;
-        left: 1075px;
-        top: 75%;
+        margin: 0 auto;
+        text-align: center;
+        width: 25px;
         padding: 10px;
         border-radius: 100%;
         background-color: #DCF2FF;

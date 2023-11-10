@@ -39,7 +39,6 @@ function subIndex(){
 
 function showProject(n){
     cardNums.forEach((cardNum) => {
-        cardNum.classList.remove('down');
         cardNum.style.display = 'none';
     })
 
@@ -51,7 +50,6 @@ function showProject(n){
     // for the current projectIndex n display the project
     projects[n].classList.add("down");
     projects[n].style.display = 'block';
-    cardNums[n].classList.add("down");
     cardNums[n].style.display = 'block';
     cardNums[n].textContent = `${n + 1}/${projects.length}`
 }
