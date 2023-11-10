@@ -416,7 +416,8 @@ a{
 
     /* adjusts the size of the bar graph in resume section */
     .plot{
-        height: 50%;
+        height: 27vh;
+        width: auto;
     }
 
     /* styling for the project container on mobile */
@@ -489,7 +490,7 @@ a{
 
     /* adjust the grids used in the skills section in mobile view */
     .skills-layout{
-        grid-template-columns: repeat(2, 13em);
+        grid-template-columns: repeat(2, 12em);
         margin-bottom: 40px;
     }
 
