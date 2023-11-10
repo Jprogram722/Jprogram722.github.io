@@ -456,7 +456,7 @@ a{
     .catch-pharse{
         padding-top: 15px;
         font-size: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
 
     .navlink-container {
@@ -534,6 +534,16 @@ a{
         background-color: #DCF2FF;
         color: #334155;
     }
+
+    /* Styles the container containing the description in the hero section */
+    .hero-description{
+        margin-top: 5px;
+        padding: 5px;
+        background-color: #1e293b;
+        border-radius: 10px;
+        border: 5px solid #637187;
+        box-shadow: .3rem .3rem;
+    }
 }
 
 @media screen and (min-width: 491px) and (max-width: 919px){
@@ -593,12 +603,17 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 6vw;
+        gap: 3vw;
     }
 
     /* changes the wisth of the catch pharse container */
     .hero-description{
+        padding: 10px;
+        background-color: #1e293b;
+        border-radius: 10px;
+        border: 5px solid #637187;
         width: 600px;
+        box-shadow: .3rem .3rem;
     }
 
     /* adjusts the personal picture for desktop */
