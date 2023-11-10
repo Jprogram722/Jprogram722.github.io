@@ -34,24 +34,12 @@ body{
     /* initializes all padding and margins to zero */
     padding: 0;
     margin: 0;
-
-    /* Sets the background color and color for the entire html body to be slate and white */
+    
+    /* Sets the color of the fonts in the website */
+    color: #DCF2FF;
     background-color: #334155;
 
-    /* 
-    The code for this background was provided by kevin powell in his youtube video 
-    Create amazing patterns using CSS gradients (https://www.youtube.com/watch?v=mXrBC_mZfTw)
-    */
-    background-image: conic-gradient(
-        from 330deg at 50% 40%,
-        #48505f 60deg,
-        transparent 60deg
-    );
-    background-size: 3rem 4rem;
-    background-position: 0 0, 1rem 2rem;
-    
-    
-    color: #DCF2FF;
+    /* Sets the font familly in the website */
     font-family: 'Roboto', sans-serif;
 }
 
@@ -63,7 +51,7 @@ body{
 .navbar{
     /* fixes the navigation bar the top of the screen and takes up 100% of the width of the screen */
     position: fixed;
-    top: 0px;
+    top: 0;
 
     /* centers the element horizontally */
     background: #334155;
@@ -76,27 +64,77 @@ body{
 
     /* the this makes it so each section takes up 100% of the screen */
     min-height: 80vh;
-    width: 98%;
+    width: 98vw;
     margin: 0 auto;
-    
+    padding-bottom: 20px;
+}
 
-    border-bottom: 15px dotted #bfd2dd;
+/* changes the background the of the even sections */
+section:nth-child(even){
+    /* Sets the background color and color for all sections to be slate and white */
+    background-color: #334155;
+
+    /* 
+    The code for this background was provided by kevin powell in his youtube video 
+    Create amazing patterns using CSS gradients (https://www.youtube.com/watch?v=mXrBC_mZfTw)
+    */
+    background-image: radial-gradient(
+        circle at 100% 50%,
+        transparent 1rem,
+        #1e293b 1rem,
+        #1e293b 1.5rem,
+        transparent 1.5rem
+    ),
+    radial-gradient(
+        circle at 0 50%,
+        transparent 1rem,
+        #1e293b 1rem,
+        #1e293b 1.5rem,
+        transparent 1.5rem
+    );
+    background-size: 9rem 5rem;
+}
+
+/* changes the background the of the odd sections */
+section:nth-child(odd){
+    /* Sets the background color and color for all sections to be slate and white */
+    background-color: #1e293b;
+
+     /* 
+    The code for this background was provided by kevin powell in his youtube video 
+    Create amazing patterns using CSS gradients (https://www.youtube.com/watch?v=mXrBC_mZfTw)
+    */
+    background-image: radial-gradient(
+        circle at 100% 50%,
+        transparent 1rem,
+        #334155 1rem,
+        #334155 1.5rem,
+        transparent 1.5rem
+    ),
+    radial-gradient(
+        circle at 0 50%,
+        transparent 1rem,
+        #334155 1rem,
+        #334155 1.5rem,
+        transparent 1.5rem
+    );
+    background-size: 9rem 5rem;
 }
 
 .personal-pic{
     /* adjusts image size depending on screen size */
-    height: 30vh;
+    height: 230px;
     /* centers the image */
     display: block;
     margin: 0 auto;
     /* rounds the image */
-    border-radius: 100%;
+    border-radius: 300%;
+    border: 5px solid #DCF2FF;
 }
 
 /* styling the catch phrase */
 .catch-pharse{
     font-family: 'Pixelify Sans', sans-serif;
-    margin-top: 50px;
 }
 
 /* these classes are generic and used on text elements */
@@ -111,7 +149,7 @@ body{
 
 .space-txt{
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .space-txt-contact{
@@ -181,6 +219,26 @@ a{
     margin-top: 25px;
 }
 
+/* Adjust the container for the resume and github links */
+.resume-container{
+    margin: 0 auto;
+    border: 2px solid #48505f;
+    background-color: #334155;
+    border-radius: 100px;
+    width: 220px;
+    gap: 0;
+}
+
+/* styles the link to my resume */
+#resume-link{
+    border-radius: 100px 0 0 100px;
+}
+
+/* styles the link to my github account */
+#github-link{
+    border-radius: 0 100px 100px 0;
+}
+
 /* This styles the navigation links */
 .navlink-container > a{
     padding: 8px;
@@ -190,32 +248,31 @@ a{
     transition: background-color 70ms linear;
 }
 
-/* 
-.video-container{
-    height: 350px;
-    border-radius: 4px;
-    overflow: hidden;
+/* Adjusts the size of the navigation link text */
+.navlink{
+    font-weight: bold;
+    font-size: large;
 }
-
-*/
 
 /* adjusts the size of the bar graph in resume section */
 .plot{
     border-radius: 10px;
-    height: 30vh;
+    height: 10%;
 }
 
 /* This makes it so elements don't appear on the website */
-.hide{
+.hide, .hiddenSlide{
     display: none;
 }
 
+/* hides the section content and applies a transition property on it */
 .hidden{
     opacity: 0;
     transform: translateX(-75px);
     transition: all 1s;
 }
 
+/* shows the section content and slides it in from the left */
 .show{
     margin: 0 auto;
     width: 80vw;
@@ -238,10 +295,12 @@ a{
     margin-bottom: 30px;
 }
 
+/* changes the size of the person icon */
 #person{
     font-size: 200px;
 }
 
+/* adjust the grids used in the mission and vision section */
 .m-v-layout{
     display: grid;
     grid-template-columns: repeat(2, 25em);
@@ -251,14 +310,16 @@ a{
     gap: 50px;
 }
 
+/* adjust the grids used in the skills section */
 .skills-layout{
     display: grid;
     grid-template-columns: repeat(4, 13em);
     justify-content: center;
     margin-top: 50px;
-    gap: 30px;
+    gap: 2vw;
 }
 
+/* Adjust the color and background color of the odd grids in the skills section */
 .grid-odd{
     background-color: #637187;
     padding: 10px;
@@ -266,6 +327,7 @@ a{
     border-radius: 4px;
 }
 
+/* Adjust the color and background color of the even grids in the skills section */
 .grid-even{
     padding: 10px;
     font-size: 20px;
@@ -274,6 +336,7 @@ a{
     border-radius: 4px;
 }
 
+/* Adjust the color and background color of the mission grid in the mission and vision section */
 .mission{
     padding: 10px;
     font-size: 30px;
@@ -281,6 +344,7 @@ a{
     border-radius: 4px;
 }
 
+/* Adjust the mission icon in the mission and vision section */
 .complex-icon{
     text-align: center;
     padding: 5px;
@@ -290,6 +354,7 @@ a{
     border-radius: 4px;
 }
 
+/* Adjust the vision icon in the mission and vision section */
 .vision-icon{
     text-align: center;
     padding: 10px;
@@ -298,6 +363,47 @@ a{
     border-radius: 4px;
 }
 
+/* creates a slide down animation for the projact cards */
+@keyframes slide-down {
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* adjusts the project buttons container */
+.project-btns{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Styles the buttons that increase and decrease the project index */
+.btn{
+    cursor: pointer;
+    font-size: xx-large;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color:#334155;
+    background-color: #c99117;
+    border: none;
+    border-radius: 10px;
+}
+
+/* applies the slide down animation to the project card along with a duration */
+.down{
+    animation-name: slide-down;
+    animation-duration: 1s;
+}
+
+/* applies styles for the mobile view */
 @media(max-width: 490px){
 
     .website-logo{
@@ -310,18 +416,20 @@ a{
 
     /* adjusts the size of the bar graph in resume section */
     .plot{
-        width: 68vw;
+        height: 50%;
     }
 
     /* styling for the project container on mobile */
     .proj{
         display: block;
-        background-color: #273241;
+        background-color: #334155;
         border: 4px solid #637187;
         padding: 20px;
         border-radius: 10px;
         margin: 20px 0;
         text-align: center;
+        height: 500px;
+        box-shadow: .3rem .3rem;
     }
 
     /* centers the image in the project container */
@@ -333,13 +441,14 @@ a{
     /* makes navbar take up the whole veiw port width */
     .navbar{
         width: 100vw;
+        border-bottom: 1px solid #DCF2FF;
     }
 
     /* size of the catch phrase */
     .catch-pharse{
-        padding-top: 50px;
+        padding-top: 15px;
         font-size: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
 
     .navlink-container {
@@ -372,23 +481,27 @@ a{
         background-color: #DCF2FF;
     }
 
+    /* adjust the grids used in the mission and vision section in mobile view */
     .m-v-layout{
         grid-template-columns: repeat(1, 25em);
         gap: 7vw;
     }
 
+    /* adjust the grids used in the skills section in mobile view */
     .skills-layout{
         grid-template-columns: repeat(2, 13em);
         margin-bottom: 40px;
     }
 
+    /* Adjust the color and background color of the mission grid in the mission and vision section for mobile*/
     .mission{
         padding: 10px;
         font-size: 20px;
-        background-color: #48505f;
+        background-color: #637187;
         border-radius: 4px;
     }
 
+    /* Adjust the mission icon in the mission and vision section for mobile*/
     .complex-icon{
         text-align: center;
         padding: 5px;
@@ -396,6 +509,32 @@ a{
         color: #334155;
         background-color: #DCF2FF;
         border-radius: 4px;
+    }
+
+    /* changes the background of the project card buttons when pressed in mobile view */
+    .btn:active{
+        background-color: #a57714;
+    }
+
+    /* Changes the properties of the card numbers on the cards for mobile*/
+    .card-number{
+        margin: 0 auto;
+        text-align: center;
+        width: 25px;
+        padding: 6px;
+        border-radius: 100%;
+        background-color: #DCF2FF;
+        color: #334155;
+    }
+
+    /* Styles the container containing the description in the hero section */
+    .hero-description{
+        margin-top: 5px;
+        padding: 5px;
+        background-color: #1e293b;
+        border-radius: 10px;
+        border: 5px solid #637187;
+        box-shadow: .3rem .3rem;
     }
 }
 
@@ -435,32 +574,69 @@ a{
 
 }
 
+/* applies styles for the desktop view */
 @media(min-width: 920px){
 
     /* Adjusts the size of the sections to fit the desktop */
     .my-section{
-        width: 85%;
         /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
         padding-top: 130px;
         padding-bottom: 20px;
     }
 
+    /* Sets the size of the navigation links to large */
+    .navlink{
+        font-size: large;
+    }
+
+    /* Adjusts the properties of the container in the hero section */
+    .hero-container{
+        padding-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+    }
+
+    /* changes the wisth of the catch pharse container */
+    .hero-description{
+        padding: 10px;
+        background-color: #1e293b;
+        border-radius: 10px;
+        border: 5px solid #637187;
+        width: 600px;
+        box-shadow: .3rem .3rem;
+    }
+
+    /* adjusts the personal picture for desktop */
+    .personal-pic{
+        border-radius: 100%;
+        width: 230px;
+        height: auto;
+    }
+
     /* styles for the catch phrase */
     .catch-pharse{
-        font-size: 5vw;
-        padding-top: 100px;
-        padding-bottom: 50px;
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+
+    /* controls the postion of the project cards */
+    .proj-showcase{
+        display: block;
+        margin: 0 auto;
+        width: min-content;
     }
 
     /* Styles each of the project cards in the resume section */
     .proj{
         border: 4px solid #637187;
-        background-color: #273241;
+        background-color: #334155;
         display: flex;
         padding: 20px;
-        width: 700px;
+        width: 720px;
         border-radius: 10px;
-        margin: 20px auto;
+        box-shadow: .3rem .3rem;
     }
 
     /* align text in the project cards to be centered */
@@ -471,15 +647,7 @@ a{
 
     /* adjusts the size of the bar graph in resume section */
     .plot{
-        height: 35vh;
-    }
-
-    /*NOT USED*/
-    .proj-code{
-        background-color: #1e293b;
-        width: 500px;
-        height: 417px;
-        overflow: scroll;
+        height: 300px;
     }
 
     /* this puts the logo and column in the same run row and spacing them out*/
@@ -490,7 +658,7 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 25vw;
+        gap: 20vw;
         border-bottom: 1px solid white;
     }
 
@@ -512,23 +680,29 @@ a{
     }
 
     /* changes the color of the background when hovering over with mouse*/
-    .page-link:hover{
-        background-color: #bfd2dd;
-    }
-    /* changes the color of the background when clicked when tabbing*/
-    .page-link:focus{
+    .page-link:hover, .page-link:focus{
         background-color: #bfd2dd;
     }
 
     /* changes the color of the background when hovering over with mouse*/
-    .navlink-container > a:hover{
+    .navlink-container > a:hover, .navlink-container > a:focus{
         color: #334155;
         background-color: #DCF2FF;
     }
 
-    /* changes the color of the background when clicked when tabbing*/
-    .navlink-container > a:focus{
-        color: #334155;
+    /* changes the color of the background when hovering over with mouse*/
+    .btn:hover{
+        background-color: #a57714;
+    }
+
+    /* Changes the properties of the card numbers on the cards for desktop*/
+    .card-number{
+        margin: 0 auto;
+        text-align: center;
+        width: 25px;
+        padding: 10px;
+        border-radius: 100%;
         background-color: #DCF2FF;
+        color: #334155;
     }
 }
