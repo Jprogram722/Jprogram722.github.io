@@ -81,15 +81,15 @@ section:nth-child(even){
     background-image: radial-gradient(
         circle at 100% 50%,
         transparent 1rem,
-        #48505f 1rem,
-        #48505f 1.5rem,
+        #1e293b 1rem,
+        #1e293b 1.5rem,
         transparent 1.5rem
     ),
     radial-gradient(
         circle at 0 50%,
         transparent 1rem,
-        #48505f 1rem,
-        #48505f 1.5rem,
+        #1e293b 1rem,
+        #1e293b 1.5rem,
         transparent 1.5rem
     );
     background-size: 9rem 5rem;
@@ -98,7 +98,7 @@ section:nth-child(even){
 /* changes the background the of the odd sections */
 section:nth-child(odd){
     /* Sets the background color and color for all sections to be slate and white */
-    background-color: #48505f;
+    background-color: #1e293b;
 
      /* 
     The code for this background was provided by kevin powell in his youtube video 
@@ -223,7 +223,7 @@ a{
 .resume-container{
     margin: 0 auto;
     border: 2px solid #48505f;
-    background-color: #273241;
+    background-color: #334155;
     border-radius: 100px;
     width: 220px;
     gap: 0;
@@ -430,7 +430,7 @@ a{
     /* styling for the project container on mobile */
     .proj{
         display: block;
-        background-color: #273241;
+        background-color: #334155;
         border: 4px solid #637187;
         padding: 20px;
         border-radius: 10px;
@@ -624,7 +624,7 @@ a{
     /* Styles each of the project cards in the resume section */
     .proj{
         border: 4px solid #637187;
-        background-color: #273241;
+        background-color: #334155;
         display: flex;
         padding: 20px;
         width: 720px;
