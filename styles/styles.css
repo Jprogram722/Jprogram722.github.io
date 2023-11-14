@@ -225,10 +225,10 @@ a{
     border: 2px solid #48505f;
     background-color: #334155;
     border-radius: 100px;
-    width: 220px;
+    width: 250px;
     box-shadow: .2rem .2rem;
     gap: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* styles the link to my resume */
@@ -239,6 +239,13 @@ a{
 /* styles the link to my github account */
 #github-link{
     border-radius: 100px;
+}
+
+#linkedin-btn{
+    border: 3px solid #48505f;
+    background-color: #1e293b;
+    box-shadow: .2rem .2rem #DCF2FF;
+    padding: 10px;
 }
 
 /* This styles the navigation links */
@@ -321,29 +328,24 @@ a{
     gap: 2vw;
 }
 
-/* Adjust the color and background color of the odd grids in the skills section */
-.grid-odd{
-    background-color: #637187;
+/* Adjust the color and background color of the grids in the skills section */
+.grid{
+    background-color: #1e293b;
+    border: 4px solid #48505f;
     padding: 10px;
     font-size: 20px;
     border-radius: 4px;
-}
-
-/* Adjust the color and background color of the even grids in the skills section */
-.grid-even{
-    padding: 10px;
-    font-size: 20px;
-    color: #334155;
-    background-color: #DCF2FF;
-    border-radius: 4px;
+    box-shadow: .3rem .3rem;
 }
 
 /* Adjust the color and background color of the mission grid in the mission and vision section */
 .mission{
     padding: 10px;
     font-size: 30px;
-    background-color: #637187;
+    background-color: #334155;
+    border: 5px solid #48505f;
     border-radius: 4px;
+    box-shadow: .3rem .3rem;
 }
 
 /* Adjust the mission icon in the mission and vision section */
@@ -351,18 +353,20 @@ a{
     text-align: center;
     padding: 5px;
     font-size: 100px;
-    color: #334155;
-    background-color: #DCF2FF;
+    background-color: #334155;
+    border: 5px solid #48505f;
     border-radius: 4px;
+    box-shadow: .3rem .3rem;
 }
 
 /* Adjust the vision icon in the mission and vision section */
 .vision-icon{
     text-align: center;
     padding: 10px;
-    background-color: #DCF2FF;
-    color: #334155;
+    background-color: #334155;
+    border: 5px solid #48505f;
     border-radius: 4px;
+    box-shadow: .3rem .3rem;
 }
 
 /* creates a slide down animation for the projact cards */
@@ -539,6 +543,10 @@ a{
         border: 5px solid #637187;
         box-shadow: .3rem .3rem;
     }
+
+    #linkedin-btn:active {
+        background-color: #bfd2dd;
+    }
 }
 
 @media screen and (min-width: 491px) and (max-width: 919px){
@@ -663,6 +671,25 @@ a{
         padding-bottom: 50px;
     }
 
+    /* changes the background of the project card buttons when pressed in mobile view */
+    .btn:active{
+        background-color: #a57714;
+    }
+
+    /* changes the color of the background when clicked on*/
+    .page-link:active{
+        background-color: #bfd2dd;
+    }
+
+    /* changes color and background when navlink is pressed.*/
+    .navlink-container > a:active{
+        color: #334155;
+        background-color: #DCF2FF;
+    }
+
+    #linkedin-btn:active {
+        background-color: #bfd2dd;
+    }
 }
 
 /* applies styles for the desktop view */
@@ -795,5 +822,9 @@ a{
         border-radius: 100%;
         background-color: #DCF2FF;
         color: #334155;
+    }
+
+    #linkedin-btn:hover {
+        background-color: #bfd2dd;
     }
 }
