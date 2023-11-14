@@ -226,17 +226,19 @@ a{
     background-color: #334155;
     border-radius: 100px;
     width: 220px;
-    gap: 0;
+    box-shadow: .2rem .2rem;
+    gap: 10px;
+    padding: 10px;
 }
 
 /* styles the link to my resume */
 #resume-link{
-    border-radius: 100px 0 0 100px;
+    border-radius: 100px;
 }
 
 /* styles the link to my github account */
 #github-link{
-    border-radius: 0 100px 100px 0;
+    border-radius: 100px;
 }
 
 /* This styles the navigation links */
