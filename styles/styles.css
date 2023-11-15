@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 
+/* SITE WIDE STYLES */
+
 html {
     /* Implements smooth scrolling for the entire page */
     scroll-behavior: smooth;
@@ -44,7 +46,7 @@ body{
 }
 
 .website-logo{
-    /* This sets the logo to 10% of the viewports height */
+    /* This sets the logo to 8% of the viewports height */
     height: 8vh;
 }
 
@@ -121,22 +123,6 @@ section:nth-child(odd){
     background-size: 9rem 5rem;
 }
 
-.personal-pic{
-    /* adjusts image size depending on screen size */
-    height: 230px;
-    /* centers the image */
-    display: block;
-    margin: 0 auto;
-    /* rounds the image */
-    border-radius: 300%;
-    border: 5px solid #DCF2FF;
-}
-
-/* styling the catch phrase */
-.catch-pharse{
-    font-family: 'Pixelify Sans', sans-serif;
-}
-
 /* these classes are generic and used on text elements */
 
 .center-txt{
@@ -195,6 +181,58 @@ a{
     border-radius: 4px;
 }
 
+/* hides the section content and applies a transition property on it */
+.hidden{
+    opacity: 0;
+    transform: translateX(-75px);
+    transition: all 1s;
+}
+
+/* shows the section content and slides it in from the left */
+.show{
+    margin: 0 auto;
+    width: 80vw;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* This styles the navigation links */
+.navlink-container > a{
+    padding: 8px;
+    border-radius: 4px;
+    color: #DCF2FF;
+    transition: color 70ms linear;
+    transition: background-color 70ms linear;
+}
+
+/* Adjusts the size of the navigation link text */
+.navlink{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+
+
+/* HERO SECTION STYLES */
+
+.personal-pic{
+    /* adjusts image size depending on screen size */
+    height: 230px;
+    /* centers the image */
+    display: block;
+    margin: 0 auto;
+    /* rounds the image */
+    border-radius: 300%;
+    border: 5px solid #DCF2FF;
+}
+
+/* styling the catch phrase */
+.catch-pharse{
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
 /* the w3c validator didn't like having a button in an anchor tag so I styled the call to action like a button */
 .call-to-action{
     font-size: larger;
@@ -210,7 +248,89 @@ a{
     background-color: #a57714;
 }
 
-/* centers the page links and spaces them 40px from top */
+
+
+
+
+/* MISSION AND VISION SECTION STYLES */
+
+/* adjust the grids used in the mission and vision section */
+.m-v-layout{
+    display: grid;
+    grid-template-columns: repeat(2, 25em);
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+/* Adjust the color and background color of the mission grid in the mission and vision section */
+.mission{
+    padding: 10px;
+    font-size: 30px;
+    background-color: #334155;
+    border: 4px solid #637187;
+    border-radius: 4px;
+    box-shadow: .3rem .3rem;
+}
+
+/* Adjust the mission icon in the mission and vision section */
+.complex-icon{
+    text-align: center;
+    padding: 5px;
+    font-size: 100px;
+    background-color: #334155;
+    border: 4px solid #637187;
+    border-radius: 4px;
+    box-shadow: .3rem .3rem;
+}
+
+/* Adjust the vision icon in the mission and vision section */
+.vision-icon{
+    text-align: center;
+    padding: 10px;
+    background-color: #334155;
+    border: 4px solid #637187;
+    border-radius: 4px;
+    box-shadow: .3rem .3rem;
+}
+
+/* Adjust the color and background color of the grids in the skills section */
+.grid{
+    background-color: #1e293b;
+    border: 4px solid #637187;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: .3rem .3rem;
+}
+
+/* color the font awesome light bulb */
+#bulb{
+    font-size: 60px;
+    color: #b17f15;
+    margin-bottom: 30px;
+}
+
+/* changes the size of the person icon */
+#person{
+    font-size: 200px;
+}
+
+/* SKILLS SECTION STYLES */
+
+/* adjust the grids used in the skills section */
+.skills-layout{
+    display: grid;
+    grid-template-columns: repeat(4, 13em);
+    justify-content: center;
+    margin-top: 50px;
+    gap: 2vw;
+}
+
+/* RESUME AND PROJECTS SECTION STYLES */
+
+/* centers the page links and spaces them 25px from top */
 .link-container {
     display: flex;
     border-radius: 4px;
@@ -222,7 +342,7 @@ a{
 /* Adjust the container for the resume and github links */
 .resume-container{
     margin: 0 auto;
-    border: 2px solid #48505f;
+    border: 4px solid #637187;
     background-color: #334155;
     border-radius: 100px;
     width: 250px;
@@ -241,28 +361,6 @@ a{
     border-radius: 100px;
 }
 
-#linkedin-btn{
-    border: 3px solid #48505f;
-    background-color: #1e293b;
-    box-shadow: .2rem .2rem #DCF2FF;
-    padding: 10px;
-}
-
-/* This styles the navigation links */
-.navlink-container > a{
-    padding: 8px;
-    border-radius: 4px;
-    color: #DCF2FF;
-    transition: color 70ms linear;
-    transition: background-color 70ms linear;
-}
-
-/* Adjusts the size of the navigation link text */
-.navlink{
-    font-weight: bold;
-    font-size: large;
-}
-
 /* adjusts the size of the bar graph in resume section */
 .plot{
     border-radius: 10px;
@@ -272,101 +370,6 @@ a{
 /* This makes it so elements don't appear on the website */
 .hide, .hiddenSlide{
     display: none;
-}
-
-/* hides the section content and applies a transition property on it */
-.hidden{
-    opacity: 0;
-    transform: translateX(-75px);
-    transition: all 1s;
-}
-
-/* shows the section content and slides it in from the left */
-.show{
-    margin: 0 auto;
-    width: 80vw;
-    transform: translateX(0);
-    opacity: 1;
-}
-
-/* styles the font awesome icons that are using in the sections */
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 25%
-}
-
-/* color the font awesome light bulb */
-#bulb{
-    font-size: 60px;
-    color: #b17f15;
-    margin-bottom: 30px;
-}
-
-/* changes the size of the person icon */
-#person{
-    font-size: 200px;
-}
-
-/* adjust the grids used in the mission and vision section */
-.m-v-layout{
-    display: grid;
-    grid-template-columns: repeat(2, 25em);
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    gap: 50px;
-}
-
-/* adjust the grids used in the skills section */
-.skills-layout{
-    display: grid;
-    grid-template-columns: repeat(4, 13em);
-    justify-content: center;
-    margin-top: 50px;
-    gap: 2vw;
-}
-
-/* Adjust the color and background color of the grids in the skills section */
-.grid{
-    background-color: #1e293b;
-    border: 4px solid #48505f;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 4px;
-    box-shadow: .3rem .3rem;
-}
-
-/* Adjust the color and background color of the mission grid in the mission and vision section */
-.mission{
-    padding: 10px;
-    font-size: 30px;
-    background-color: #334155;
-    border: 5px solid #48505f;
-    border-radius: 4px;
-    box-shadow: .3rem .3rem;
-}
-
-/* Adjust the mission icon in the mission and vision section */
-.complex-icon{
-    text-align: center;
-    padding: 5px;
-    font-size: 100px;
-    background-color: #334155;
-    border: 5px solid #48505f;
-    border-radius: 4px;
-    box-shadow: .3rem .3rem;
-}
-
-/* Adjust the vision icon in the mission and vision section */
-.vision-icon{
-    text-align: center;
-    padding: 10px;
-    background-color: #334155;
-    border: 5px solid #48505f;
-    border-radius: 4px;
-    box-shadow: .3rem .3rem;
 }
 
 /* creates a slide down animation for the projact cards */
@@ -390,7 +393,7 @@ a{
 }
 
 /* Styles the buttons that increase and decrease the project index */
-.btn{
+.proj-btn{
     cursor: pointer;
     font-size: xx-large;
     padding-left: 20px;
@@ -409,8 +412,56 @@ a{
     animation-duration: 1s;
 }
 
+
+/* CONTACT ME SECTION STYLES */
+
+/* This adjusts the style of the linkedin link the the contact me */
+#linkedin-btn{
+    border: 4px solid #637187;
+    background-color: #1e293b;
+    box-shadow: .2rem .2rem #DCF2FF;
+    padding: 10px;
+}
+
+
 /* applies styles for the mobile view */
 @media(max-width: 490px){
+
+    /* SITE WIDE STYLES MOBILE */
+
+     /* makes navbar take up the whole veiw port width */
+     .navbar{
+        width: 100vw;
+        border-bottom: 1px solid #DCF2FF;
+    }
+
+    .navlink-container {
+        /* this aligns the navigation links horizontally in the nav bar */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding-top: 10px;
+    }
+
+    .my-section{
+        /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
+        padding-top: 150px;
+    }
+
+    /* changes the color of the background when clicked on*/
+    .page-link:active{
+        background-color: #bfd2dd;
+    }
+
+    /* changes color and background when navlink is pressed.*/
+    .navlink-container > a:active{
+        color: #334155;
+        background-color: #DCF2FF;
+    }
+
+
+    /* HERO SECTION STYLES MOBILE */
 
     .website-logo{
         display: block;
@@ -419,6 +470,64 @@ a{
         margin: 0 auto;
         padding-top: 10px;
     }
+
+    /* size of the catch phrase */
+    .catch-pharse{
+        padding-top: 15px;
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* changes the color of the background when clicked on*/
+    .call-to-action:active{
+        background-color: #b17f15;
+    }
+
+    /* Styles the container containing the description in the hero section */
+    .hero-description{
+        margin-top: 5px;
+        padding: 5px;
+        background-color: #1e293b;
+        border-radius: 10px;
+        border: 5px solid #637187;
+        box-shadow: .3rem .3rem;
+    }
+
+
+    /* MISSION AND VISION SECTION STYLES MOBILE */
+
+    /* adjust the grids used in the mission and vision section in mobile view */
+    .m-v-layout{
+        grid-template-columns: repeat(1, 25em);
+        gap: 7vw;
+    }
+
+    /* Adjust the color and background color of the mission grid in the mission and vision section for mobile*/
+    .mission{
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 4px;
+    }
+
+    /* Adjust the mission icon in the mission and vision section for mobile*/
+    .complex-icon{
+        text-align: center;
+        padding: 5px;
+        font-size: 100px;
+        border-radius: 4px;
+    }
+
+
+    /* SKILLS SECTION STYLES MOBILE */
+
+    /* adjust the grids used in the skills section in mobile view */
+    .skills-layout{
+        grid-template-columns: repeat(2, 12em);
+        margin-bottom: 40px;
+    }
+
+
+    /* RESUME AND PROJECTS SECTION STYLES MOBILE */
 
     /* adjusts the size of the bar graph in resume section */
     .plot{
@@ -445,81 +554,8 @@ a{
         margin: 0 auto;
     }
 
-    /* makes navbar take up the whole veiw port width */
-    .navbar{
-        width: 100vw;
-        border-bottom: 1px solid #DCF2FF;
-    }
-
-    /* size of the catch phrase */
-    .catch-pharse{
-        padding-top: 15px;
-        font-size: 30px;
-        padding-bottom: 30px;
-    }
-
-    .navlink-container {
-        /* this aligns the navigation links horizontally in the nav bar */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        padding-top: 10px;
-    }
-
-    .my-section{
-        /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
-        padding-top: 150px;
-    }
-
-    /* changes the color of the background when clicked on*/
-    .call-to-action:active{
-        background-color: #b17f15;
-    }
-
-    /* changes the color of the background when clicked on*/
-    .page-link:active{
-        background-color: #bfd2dd;
-    }
-
-    /* changes color and background when navlink is pressed.*/
-    .navlink-container > a:active{
-        color: #334155;
-        background-color: #DCF2FF;
-    }
-
-    /* adjust the grids used in the mission and vision section in mobile view */
-    .m-v-layout{
-        grid-template-columns: repeat(1, 25em);
-        gap: 7vw;
-    }
-
-    /* adjust the grids used in the skills section in mobile view */
-    .skills-layout{
-        grid-template-columns: repeat(2, 12em);
-        margin-bottom: 40px;
-    }
-
-    /* Adjust the color and background color of the mission grid in the mission and vision section for mobile*/
-    .mission{
-        padding: 10px;
-        font-size: 20px;
-        background-color: #637187;
-        border-radius: 4px;
-    }
-
-    /* Adjust the mission icon in the mission and vision section for mobile*/
-    .complex-icon{
-        text-align: center;
-        padding: 5px;
-        font-size: 100px;
-        color: #334155;
-        background-color: #DCF2FF;
-        border-radius: 4px;
-    }
-
     /* changes the background of the project card buttons when pressed in mobile view */
-    .btn:active{
+    .proj-btn:active{
         background-color: #a57714;
     }
 
@@ -534,22 +570,18 @@ a{
         color: #334155;
     }
 
-    /* Styles the container containing the description in the hero section */
-    .hero-description{
-        margin-top: 5px;
-        padding: 5px;
-        background-color: #1e293b;
-        border-radius: 10px;
-        border: 5px solid #637187;
-        box-shadow: .3rem .3rem;
-    }
-
+    /* CONTACT ME SECTION STYLES MOBILE */
+    
+    /* chnages the color of the linkedin link when press on mobile */
     #linkedin-btn:active {
         background-color: #bfd2dd;
     }
 }
 
 @media screen and (min-width: 491px) and (max-width: 919px){
+
+    /* SITE WIDE STYLES TABLET */
+
     .navbar{
         width: 100vw;
         border-bottom: 1px solid #DCF2FF;
@@ -564,6 +596,32 @@ a{
         padding-top: 10px;
     }
 
+    /* Adjusts the size of the sections to fit the desktop */
+    .my-section{
+        padding-top: 150px;
+    }
+
+    /* changes the color of the background when clicked on*/
+    .page-link:active{
+        background-color: #bfd2dd;
+    }
+
+    /* changes color and background when navlink is pressed.*/
+    .navlink-container > a:active{
+        color: #334155;
+        background-color: #DCF2FF;
+    }
+
+    /* HERO SECTION STYLES TABLET */
+
+    .website-logo{
+        display: block;
+    
+        /* This centers the logo horizontally on the screen */
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
     /* Styles the container containing the description in the hero section */
     .hero-description{
         margin: 10px auto;
@@ -575,16 +633,15 @@ a{
         box-shadow: .3rem .3rem;
     }
 
-    /* size of the catch phrase */
+    /* stles of the catch phrase */
     .catch-pharse{
         margin-left: 10px;
+        padding-top: 50px;
+        font-size: 2em;
+        padding-bottom: 15px;
     }
 
-    /* adjust the grids used in the skills section in mobile view */
-    .skills-layout{
-        grid-template-columns: repeat(2, 15em);
-        margin-bottom: 40px;
-    }
+    /* MISSION AND VISION SECTION STYLES TABLET */
 
     /* adjust the grids used in the mission and vision section in mobile view */
     .m-v-layout{
@@ -597,8 +654,6 @@ a{
         text-align: center;
         padding: 5px;
         font-size: 60px;
-        color: #334155;
-        background-color: #DCF2FF;
         border-radius: 4px;
     }
 
@@ -606,7 +661,6 @@ a{
     .mission{
         padding: 10px;
         font-size: 22px;
-        background-color: #637187;
         border-radius: 4px;
     }
 
@@ -614,6 +668,16 @@ a{
     #person{
         font-size: 150px;
     }
+
+    /* SKILLS SECTION STYLES TABLET */
+
+    /* adjust the grids used in the skills section in mobile view */
+    .skills-layout{
+        grid-template-columns: repeat(2, 15em);
+        margin-bottom: 40px;
+    }
+
+    /* RESUME AND PROJECTS SECTION STYLES TABLET */
 
     /* adjusts the size of the bar graph in resume section */
     .plot{
@@ -651,41 +715,13 @@ a{
         color: #334155;
     }
 
-    .website-logo{
-        display: block;
-    
-        /* This centers the logo horizontally on the screen */
-        margin: 0 auto;
-        padding-top: 10px;
-    }
-
-    /* Adjusts the size of the sections to fit the desktop */
-    .my-section{
-        padding-top: 180px;
-    }
-
-    /* size of the catch phrase */
-    .catch-pharse{
-        padding-top: 50px;
-        font-size: 2em;
-        padding-bottom: 50px;
-    }
-
     /* changes the background of the project card buttons when pressed in mobile view */
-    .btn:active{
+    .proj-btn:active{
         background-color: #a57714;
     }
 
-    /* changes the color of the background when clicked on*/
-    .page-link:active{
-        background-color: #bfd2dd;
-    }
-
-    /* changes color and background when navlink is pressed.*/
-    .navlink-container > a:active{
-        color: #334155;
-        background-color: #DCF2FF;
-    }
+    
+    /* CONTACT ME SECTION STYLES TABLET */
 
     #linkedin-btn:active {
         background-color: #bfd2dd;
@@ -695,6 +731,8 @@ a{
 /* applies styles for the desktop view */
 @media(min-width: 920px){
 
+    /* SITE WIDE STYLES DESKTOP */
+
     /* Adjusts the size of the sections to fit the desktop */
     .my-section{
         /* This makes it so none of the sections are cropped by navbar when traversing site with nav links */
@@ -702,10 +740,47 @@ a{
         padding-bottom: 20px;
     }
 
+    /* this puts the logo and column in the same run row and spacing them out*/
+    .navbar{
+        padding-top: 10px;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20vw;
+        border-bottom: 1px solid white;
+    }
+
+    /* make a gap for the navlinks */
+    .navlink-container{
+        display: flex;
+        gap: 1rem;
+    }
+
     /* Sets the size of the navigation links to large */
     .navlink{
         font-size: large;
     }
+
+    /* enable a transition animation for the page lines */
+    .page-link{
+        padding: 10px;
+        transition: ease-in-out 75ms;
+    }
+
+    /* changes the color of the background when hovering over with mouse*/
+    .page-link:hover, .page-link:focus{
+        background-color: #bfd2dd;
+    }
+
+    /* changes the color of the background when hovering over with mouse*/
+    .navlink-container > a:hover, .navlink-container > a:focus{
+        color: #334155;
+        background-color: #DCF2FF;
+    }
+
+    /* HERO SECTION STYLES DESKTOP */
 
     /* Adjusts the properties of the container in the hero section */
     .hero-container{
@@ -739,6 +814,15 @@ a{
         padding-bottom: 40px;
     }
 
+    /* SKILLS SECTION STYLES DESKTOP */
+
+    /* adjust the size of the skills font */
+    .skills-list{
+        font-size: large;
+    }
+
+    /* RESUME AND PROJECTS STYLES DESKTOP */
+
     /* controls the postion of the project cards */
     .proj-showcase{
         display: block;
@@ -768,48 +852,8 @@ a{
         height: 300px;
     }
 
-    /* this puts the logo and column in the same run row and spacing them out*/
-    .navbar{
-        padding-top: 10px;
-        left: 0%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20vw;
-        border-bottom: 1px solid white;
-    }
-
-    /* make a gap for the navlinks */
-    .navlink-container{
-        display: flex;
-        gap: 1rem;
-    }
-
-    /* enable a transition animation for the page lines */
-    .page-link{
-        padding: 10px;
-        transition: ease-in-out 75ms;
-    }
-
-    /* adjust the size of the skills font */
-    .skills-list{
-        font-size: large;
-    }
-
     /* changes the color of the background when hovering over with mouse*/
-    .page-link:hover, .page-link:focus{
-        background-color: #bfd2dd;
-    }
-
-    /* changes the color of the background when hovering over with mouse*/
-    .navlink-container > a:hover, .navlink-container > a:focus{
-        color: #334155;
-        background-color: #DCF2FF;
-    }
-
-    /* changes the color of the background when hovering over with mouse*/
-    .btn:hover{
+    .proj-btn:hover{
         background-color: #a57714;
     }
 
@@ -824,6 +868,8 @@ a{
         color: #334155;
     }
 
+    /* CONTACT ME SECTION STYLES DESKTOP */
+    
     #linkedin-btn:hover {
         background-color: #bfd2dd;
     }
