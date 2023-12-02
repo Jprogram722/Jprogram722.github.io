@@ -2,6 +2,7 @@
     Author: Jared Park
     Date: 11-09-2023
     Description: This script toggle which project is visable on the page
+    insperation from W3 Schools (https://www.w3schools.com/howto/howto_js_slideshow.asp)
 */
 
 // grabs all of the project card containers
@@ -38,6 +39,8 @@ function subIndex(){
 }
 
 function showProject(n){
+    
+    // sets all the car number to have a display of none
     cardNums.forEach((cardNum) => {
         cardNum.style.display = 'none';
     })

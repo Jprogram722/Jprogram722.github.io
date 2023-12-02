@@ -328,6 +328,8 @@ a{
     gap: 2vw;
 }
 
+
+
 /* RESUME AND PROJECTS SECTION STYLES */
 
 /* centers the page links and spaces them 25px from top */
@@ -854,7 +856,7 @@ a{
     }
 
     /* changes the color of the background when hovering over with mouse*/
-    .proj-btn:hover{
+    .proj-btn:hover, .proj-btn:focus{
         background-color: #a57714;
     }
 
@@ -871,7 +873,7 @@ a{
 
     /* CONTACT ME SECTION STYLES DESKTOP */
     
-    #linkedin-btn:hover {
+    #linkedin-btn:hover, #linkedin-btn:focus{
         background-color: #bfd2dd;
     }
 }
